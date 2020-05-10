@@ -10,7 +10,7 @@ export default () => (
         <div className={Styles.title}>
           {" "}
           <h1>
-            Blow<span className={Styles.spantitle}>Fish</span>
+            Blow<span className={Styles.spantitle}>fish</span> Studios
           </h1>
           <p>
             <span className={Styles.high}>Custom </span>website development.{" "}
@@ -25,5 +25,7 @@ export default () => (
         </div>
       </div>
     </section>
+
+    <section className={Styles.intro}></section>
   </div>
 )
