@@ -24,20 +24,27 @@ div[role="group"][tabindex] {
 .light-mode {
   background-color: #ffff;
   color: #333;
+
+  transition: color 2s ease;
   transition: background-color 2s ease;
   --lightb: #f3f3f3;
-
+  --lighttext: #444444;
   --crossline: black;
+  --headertext: black;
 }
 .dark-mode {
   background-color: #1a1919;
   color: #999;
   --bg: white;
-  --lightb: #eca4a4;
+  --lightb: #2e2727;
+  --lighttext: #f4f4f4;
   --textNormal: #222;
   --textTitle: #222;
   --textLink: blue;
   --crossline: #f11c59;
+  --headertext: #f4f4f4;
+
+  transition: color 2s ease;
   transition: background-color 2s ease;
 
   --hr: hsla(0, 0%, 0%, 0.2);

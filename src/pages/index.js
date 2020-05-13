@@ -26,6 +26,111 @@ export default () => (
       </div>
     </section>
 
-    <section className={Styles.intro}></section>
+    <section className={Styles.intro}>
+      <div className={Styles.introflex}>
+        <div className={Styles.name}>
+          <h2>Fred Jones</h2>
+          <p>
+            lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+            lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+            lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+            lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+            lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+            lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+            lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+            lorem lorem lorem lorem lorem lorem lorem
+          </p>
+        </div>
+        <div className={Styles.fish}>
+          <img src={Fish} alt="Cute blowfish cartoon"></img>
+        </div>
+      </div>
+    </section>
+
+    <section className={Styles.process}>
+      <div className={Styles.processcon}>
+        <h2>The Process</h2>
+        <p>
+          Lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+          lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+          lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+          lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+          lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+          lorem lorem lorem lorem
+        </p>
+
+        <div className={Styles.processflex}>
+          <div className={Styles.processimg}>
+            <div className={Styles.processinner}></div>
+          </div>
+          <div className={Styles.processinfo}>
+            <h3>Lorem Lorem</h3>
+            <p>
+              lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+              lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+              lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+              lorem lorem lorem
+            </p>
+          </div>
+        </div>
+
+        <div className={Styles.processflex}>
+          <div className={Styles.processimg}>
+            <div className={Styles.processinner}></div>
+          </div>
+          <div className={Styles.processinfo}>
+            <h3>Lorem Lorem</h3>
+            <p>
+              lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+              lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+              lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+              lorem lorem lorem
+            </p>
+          </div>
+        </div>
+        <div className={Styles.processflex}>
+          <div className={Styles.processimg}>
+            <div className={Styles.processinner}></div>
+          </div>
+          <div className={Styles.processinfo}>
+            <h3>Lorem Lorem</h3>
+            <p>
+              lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+              lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+              lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+              lorem lorem lorem
+            </p>
+          </div>
+        </div>
+        <div className={Styles.processflex}>
+          <div className={Styles.processimg}>
+            <div className={Styles.processinner}></div>
+          </div>
+          <div className={Styles.processinfo}>
+            <h3>Lorem Lorem</h3>
+            <p>
+              lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+              lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+              lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+              lorem lorem lorem
+            </p>
+          </div>
+        </div>
+        <div className={Styles.processflex}>
+          <div className={Styles.processimg}>
+            <div className={Styles.processinner}></div>
+          </div>
+          <div className={Styles.processinfo}>
+            <h3>Lorem Lorem</h3>
+            <p>
+              lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+              lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+              lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+              lorem lorem lorem
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 )

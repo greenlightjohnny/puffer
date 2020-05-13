@@ -60,7 +60,104 @@
 
 /////////////////////////////////////////////////////
 .intro {
-  min-height: 100vh;
-  border: 1px solid red;
+  //min-height: 100vh;
+  //border: 1px solid red;
   background-color: var(--lightb);
+}
+
+.introflex {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex: 1;
+  //border: 1px solid blue;
+
+  > div {
+    //max-width: 400px;
+    flex: 1;
+    //border: 1px solid green;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 4rem;
+  }
+
+  .name {
+    h2 {
+      font-size: 3rem;
+      //padding-top: 3rem;
+      color: var(--headertext);
+    }
+
+    p {
+      color: var(--lighttext);
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
+    max-width: 350px;
+    justify-content: center;
+    //margin-top: 4rem;
+
+    .fish {
+      //max-height: 200px;
+      float: right;
+      img {
+        object-fit: contain;
+        max-height: 250px;
+        float: right;
+      }
+    }
+  }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.process {
+  .processcon {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    h2 {
+      font-size: 3rem;
+      margin-top: 5rem;
+      color: var(--headertext);
+    }
+    p {
+      color: var(--lighttext);
+    }
+
+    .processflex {
+      display: flex;
+      flex-direction: row;
+      flex: 1;
+
+      @media screen and (max-width: 700px) {
+        flex-direction: column;
+      }
+      .processimg {
+        .processinner {
+          width: 100px;
+          height: 100px;
+          background-color: green;
+          margin-right: 2rem;
+          margin-top: 2.175rem;
+        }
+      }
+      .processinfo {
+        width: 80%;
+        @media screen and (max-width: 700px) {
+          width: 100%;
+        }
+        h3,
+        h2 {
+          color: var(--headertext);
+        }
+        p {
+          color: var(--lighttext);
+        }
+      }
+    }
+  }
 }
