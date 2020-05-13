@@ -330,3 +330,25 @@ input[type="checkbox"].dmcheck {
     background-color: rgb(25, 206, 245);
   }
 }
+
+body {
+  .light-mode {
+    background-color: #ffff;
+    color: #333;
+    transition: background-color 2s ease;
+
+    --crossline: black;
+  }
+  .dark-mode {
+    background-color: #ee5f5f;
+    color: #999;
+    --bg: white;
+    --textNormal: #222;
+    --textTitle: #222;
+    --textLink: blue;
+    --crossline: #f11c59;
+    transition: background-color 2s ease;
+
+    --hr: hsla(0, 0%, 0%, 0.2);
+  }
+}
