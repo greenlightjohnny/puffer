@@ -31,6 +31,7 @@ div[role="group"][tabindex] {
   --lighttext: #444444;
   --crossline: black;
   --headertext: black;
+  --para: rgb(80, 80, 80);
 }
 .dark-mode {
   background-color: #1a1919;
@@ -43,6 +44,7 @@ div[role="group"][tabindex] {
   --textLink: blue;
   --crossline: #f11c59;
   --headertext: #f4f4f4;
+  --para: #e0d5d5;
 
   transition: color 2s ease;
   transition: background-color 2s ease;

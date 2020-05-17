@@ -4,6 +4,7 @@
 // }
 
 .landing {
+  padding-bottom: 3rem;
   .landingflex {
     display: flex;
     flex-direction: row;
@@ -63,6 +64,7 @@
   //min-height: 100vh;
   //border: 1px solid red;
   background-color: var(--lightb);
+  padding-bottom: 3rem;
 }
 
 .introflex {
@@ -89,7 +91,7 @@
     }
 
     p {
-      color: var(--lighttext);
+      color: var(--para);
     }
   }
 
@@ -167,6 +169,7 @@
 .showcase {
   background-color: var(--lightb);
   padding-top: 3rem;
+  padding-bottom: 3rem;
   .showcaseflex {
     max-width: 1100px;
     margin: 0 auto;
@@ -231,7 +234,13 @@
 
     h2 {
       font-size: 3rem;
+      color: var(--headertext);
       //spadding-left: 1rem;
+    }
+
+    h3,
+    p {
+      color: var(--headertext);
     }
   }
 }
