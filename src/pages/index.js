@@ -29,20 +29,38 @@ export default () => (
     <section className={Styles.intro}>
       <div className={Styles.introflex}>
         <div className={Styles.name}>
-          <h2>Electric Eel</h2>
-          <p>
+          <h2 data-sal="slide-left" data-sal-delay="300" data-sal-easing="ease">
+            {" "}
+            Electric Eel
+          </h2>
+          <p
+            data-sal="fade"
+            data-sal-delay="400"
+            data-sal-easing="ease-in"
+            data-sal-duration="1000"
+          >
             I'm <strong>Fred Jones</strong> and Electric Eel is my freelance{" "}
             <strong>Web Development</strong> studio. Based out of{" "}
             <strong>Roanoke, VA</strong>
             and <strong>Bangkok, Thailand</strong> I work with clients around
             the world to create unique websites.
           </p>
-          <p>
+          <p
+            data-sal="fade"
+            data-sal-delay="400"
+            data-sal-easing="ease-in"
+            data-sal-duration="1000"
+          >
             Typically I only take on <strong>one new client project</strong> at
             a time, allowing me to focus all my creative energy and coding for a
             single project.
           </p>
-          <p>
+          <p
+            data-sal="fade"
+            data-sal-delay="400"
+            data-sal-easing="ease-in"
+            data-sal-duration="1000"
+          >
             My goals are to create a unique, fast, and user friendly website.
             For this I use <strong>Gatsby</strong>, instead of the more common
             WordPress. Gatsby sites load much <strong>faster</strong>, have{" "}
@@ -98,25 +116,17 @@ export default () => (
             </p>
           </div>
         </div>
+
         <div className={Styles.processflex}>
           <div className={Styles.processimg}>
             <div className={Styles.processinner}></div>
           </div>
 
-          <div className={Styles.processflex}>
+          {/* <div className={Styles.processflex}>
             <div className={Styles.processimg}>
               <div className={Styles.processinner}></div>
             </div>
-            <div className={Styles.processinfo}>
-              <h3>Design</h3>
-              <p>
-                No set criteria here. You can have your own design ready to go,
-                a general outline of what you are looking for, or absolutely no
-                idea. I can even rebuild existing websites to perform better and
-                look more modern.
-              </p>
-            </div>
-          </div>
+          </div> */}
           <div className={Styles.processinfo}>
             <h3>Communication</h3>
             <p>
@@ -135,7 +145,13 @@ export default () => (
             <div className={Styles.processinner}></div>
           </div>
           <div className={Styles.processinfo}>
-            <h3>Quality Content</h3>
+            <h3
+              data-sal="slide-right"
+              data-sal-delay="300"
+              data-sal-easing="ease"
+            >
+              Quality Content
+            </h3>
             <p>
               Nothing helps your website rank higher than having high quality
               content. The days of fooling search engines with keyword stuffing
@@ -232,5 +248,91 @@ export default () => (
         </p>
       </div>
     </section>
+    <section className={Styles.waves}>
+      <svg width="100%" height="200px" fill="none">
+        <path
+          fill="#1eaedb"
+          d="
+                M 0 67 
+                C 273,183
+                  822,-40
+                  1920,106 
+
+                V 359 
+                H 0 
+                V 67 
+                Z"
+        >
+          <animate
+            repeatCount="indefinite"
+            fill="#454599"
+            attributeName="d"
+            dur="15s"
+            values="
+            M0 77 
+            C 473,283
+              822,-40
+              1920,116 
+
+            V 359 
+            H 0 
+            V 67 
+            Z; 
+
+            M0 77 
+            C 473,-40
+              1222,283
+              1920,136 
+
+            V 359 
+            H 0 
+            V 67 
+            Z; 
+
+            M0 77 
+            C 973,260
+              1722,-53
+              1920,120 
+
+            V 359 
+            H 0 
+            V 67 
+            Z; 
+
+            M0 77 
+            C 473,283
+              822,-40
+              1920,116 
+
+            V 359 
+            H 0 
+            V 67 
+            Z
+            "
+          ></animate>
+        </path>
+      </svg>
+    </section>
+
+    <footer className={Styles.footer}>
+      <div className={Styles.innerfooter}>
+        <p>
+          Build with{" "}
+          <svg
+            stroke="currentColor"
+            fill="red"
+            stroke-width="0"
+            viewBox="0 0 512 512"
+            class="footer__StyledHeart-vlykoa-4 hTUIdA"
+            height="1em"
+            width="1em"
+          >
+            <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path>
+          </svg>{" "}
+          and Gatsby
+        </p>
+        <p>Copyright</p>
+      </div>
+    </footer>
   </div>
 )
