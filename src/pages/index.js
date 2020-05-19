@@ -80,7 +80,12 @@ export default () => (
     <section className={Styles.process}>
       <div className={Styles.processcon}>
         <h2>The Process</h2>
-        <p>
+        <p
+          data-sal="fade"
+          data-sal-delay="400"
+          data-sal-easing="ease-in"
+          data-sal-duration="1000"
+        >
           This is totally flexible! Because I only have one major project at a
           time, it is extremely easy to implement new requests during the
           development process.
@@ -91,8 +96,19 @@ export default () => (
             <div className={Styles.processinner}></div>
           </div>
           <div className={Styles.processinfo}>
-            <h3>Initial Consultation</h3>
-            <p>
+            <h3
+              data-sal="slide-right"
+              data-sal-delay="300"
+              data-sal-easing="ease"
+            >
+              Initial Consultation
+            </h3>
+            <p
+              data-sal="fade"
+              data-sal-delay="400"
+              data-sal-easing="ease-in"
+              data-sal-duration="1000"
+            >
               In person (if we are close), phone or video calls. We discuss your
               goals for the website, I answer any questions about web
               development. It's always free, and there is zero pressure. Web
@@ -106,8 +122,19 @@ export default () => (
             <div className={Styles.processinner}></div>
           </div>
           <div className={Styles.processinfo}>
-            <h3>Project Proposal</h3>
-            <p>
+            <h3
+              data-sal="slide-right"
+              data-sal-delay="300"
+              data-sal-easing="ease"
+            >
+              Project Proposal
+            </h3>
+            <p
+              data-sal="fade"
+              data-sal-delay="400"
+              data-sal-easing="ease-in"
+              data-sal-duration="1000"
+            >
               Based on our conversation, I send you a proposal with a fixed
               price and estimated timeline. I won't ever run over budget, even
               if I have to eat the costs. During the development process minor
@@ -128,8 +155,19 @@ export default () => (
             </div>
           </div> */}
           <div className={Styles.processinfo}>
-            <h3>Communication</h3>
-            <p>
+            <h3
+              data-sal="slide-right"
+              data-sal-delay="300"
+              data-sal-easing="ease"
+            >
+              Communication
+            </h3>
+            <p
+              data-sal="fade"
+              data-sal-delay="400"
+              data-sal-easing="ease-in"
+              data-sal-duration="1000"
+            >
               During the development you are welcome to be involved as little or
               as much as you would like. Great communication is key, so you will
               be kept updated during the entire process. Because Electric Eel is
@@ -152,7 +190,12 @@ export default () => (
             >
               Quality Content
             </h3>
-            <p>
+            <p
+              data-sal="fade"
+              data-sal-delay="400"
+              data-sal-easing="ease-in"
+              data-sal-duration="1000"
+            >
               Nothing helps your website rank higher than having high quality
               content. The days of fooling search engines with keyword stuffing
               are long gone. I handle the behind the scenes SEO, such as
@@ -167,10 +210,18 @@ export default () => (
 
     <section className={Styles.showcase}>
       <div className={Styles.showcaseflex}>
-        <h2>Showcase</h2>
+        <h2 data-sal="slide-right" data-sal-delay="300" data-sal-easing="ease">
+          Showcase
+        </h2>
         <div className={Styles.showcaseflex2}>
           <div className={Styles.showcasetitle}>
-            <h3>Project Name</h3>
+            <h3
+              data-sal="slide-right"
+              data-sal-delay="300"
+              data-sal-easing="ease"
+            >
+              Project Name
+            </h3>
             <p>Lorem lorem lorem lorem lorem</p>
           </div>
           <div className={Styles.showcaseimg}>
@@ -179,7 +230,13 @@ export default () => (
         </div>
         <div className={Styles.showcaseflex2}>
           <div className={Styles.showcasetitle}>
-            <h3>Project Name</h3>
+            <h3
+              data-sal="slide-right"
+              data-sal-delay="300"
+              data-sal-easing="ease"
+            >
+              Project Name
+            </h3>
             <p>Lorem lorem lorem lorem lorem</p>
           </div>
           <div className={Styles.showcaseimg}>
@@ -188,7 +245,13 @@ export default () => (
         </div>
         <div className={Styles.showcaseflex2}>
           <div className={Styles.showcasetitle}>
-            <h3>Project Name</h3>
+            <h3
+              data-sal="slide-right"
+              data-sal-delay="300"
+              data-sal-easing="ease"
+            >
+              Project Name
+            </h3>
             <p>Lorem lorem lorem lorem lorem</p>
           </div>
           <div className={Styles.showcaseimg}>
@@ -218,16 +281,30 @@ export default () => (
     </section>
     <section className={Styles.tech}>
       <div className={Styles.techflex}>
-        <h2>Our Technology</h2>
-        <p>
+        <h2 data-sal="zoom-in" data-sal-delay="300" data-sal-easing="ease">
+          Our Technology
+        </h2>
+        <p
+          data-sal="fade"
+          data-sal-delay="400"
+          data-sal-easing="ease-in"
+          data-sal-duration="1000"
+        >
           Our primary development tool is Gatsby, a very new static site
           generator. Behind the scenes, it is a huge change from your typical
           \\\\\\\\\\ WordPress PHP developed website.
         </p>
       </div>
       <div className={Styles.techflex}>
-        <h3>SPEED</h3>
-        <p>
+        <h3 data-sal="zoom-in" data-sal-delay="300" data-sal-easing="ease">
+          SPEED
+        </h3>
+        <p
+          data-sal="fade"
+          data-sal-delay="400"
+          data-sal-easing="ease-in"
+          data-sal-duration="1000"
+        >
           How fast your website loads matters a massive amount. x number of
           people will abandon a website if it takes longer than x seconds to
           load. Large, unptomized websites with a ton of useless plugins are
@@ -237,8 +314,15 @@ export default () => (
         </p>
       </div>
       <div className={Styles.techflex}>
-        <h3>SEO</h3>
-        <p>
+        <h3 data-sal="zoom-in" data-sal-delay="300" data-sal-easing="ease">
+          SEO
+        </h3>
+        <p
+          data-sal="fade"
+          data-sal-delay="400"
+          data-sal-easing="ease-in"
+          data-sal-duration="1000"
+        >
           Guess what? Turns out that load times factor into how Google ranks
           websites in search results. Excellent news if you are using Gatsby.
           Even better, since Gatsby is pre made, it is much easier for robots to
@@ -331,7 +415,7 @@ export default () => (
           </svg>{" "}
           and Gatsby
         </p>
-        <p>Copyright</p>
+        <p>© 2020 Fred Jones</p>
       </div>
     </footer>
   </div>
