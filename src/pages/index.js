@@ -22,6 +22,9 @@ export default () => (
         </div>
         <div className={Styles.fish}>
           <img src={Fish} alt="Cute blowfish cartoon"></img>
+          <div className={Styles.bubbles}>
+            <div className={Styles.bubble}></div>
+          </div>
         </div>
       </div>
     </section>
