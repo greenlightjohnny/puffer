@@ -17,6 +17,15 @@ body {
   margin: 0px;
 }
 
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 div[role="group"][tabindex] {
   height: 100%;
 }
@@ -32,12 +41,15 @@ div[role="group"][tabindex] {
   --crossline: black;
   --headertext: black;
   --para: rgb(80, 80, 80);
+  --textcolor: #080808;
 }
 .dark-mode {
   background-color: #1a1919;
   color: #999;
   --bg: white;
-  --lightb: #2e2727;
+  /* --lightb: #2e2727; */
+  --textcolor: rgba(255, 255, 255, 0.5);
+  --lightb: #080808;
   --lighttext: #f4f4f4;
   --textNormal: #222;
   --textTitle: #222;

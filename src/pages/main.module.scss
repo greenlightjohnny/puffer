@@ -10,6 +10,9 @@
 
 .landing {
   padding-bottom: 3rem;
+  //margin-bottom: 3rem;
+  height: 100vh;
+  //background-color: black;
   .landingflex {
     display: flex;
     flex-direction: row;
@@ -18,14 +21,17 @@
     margin: 0 auto;
     //border: 1px solid blue;
     margin-top: 10rem;
-
+    //margin-bottom: 2rem;
+    padding-bottom: 3rem;
     .fish {
       position: relative;
+      padding-bottom: 3rem;
+      padding-right: 2rem;
     }
 
     @media screen and (max-width: 700px) {
       flex-direction: column;
-      max-width: 350px;
+      //max-width: 350px;
       justify-content: center;
       margin-top: 4rem;
 
@@ -37,6 +43,7 @@
           object-fit: contain;
           max-height: 250px;
           float: right;
+          //padding-bottom: 3rem;
         }
       }
     }
@@ -51,20 +58,57 @@
       //margin-top: 10rem;
 
       .high {
-        color: #f4f4f4;
+        color: var(--headertext);
+        font-weight: bold;
       }
       .spantitle {
         color: #ebaf4b;
       }
 
       p {
-        color: hsla(0, 0%, 100%, 0.5);
+        //color: hsla(0, 0%, 100%, 0.5);
+        color: var(--textcolor);
         font-size: 1.3rem;
       }
       h1 {
         color: #40c4fb;
         font-size: 3rem;
       }
+    }
+  }
+  .bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 2rem;
+  }
+
+  .bubble {
+    animation: bubbleOne 3s ease-in infinite;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0.5em 0 rgba(255, 255, 255, 0.5);
+    height: 2rem;
+    left: -20px;
+    position: absolute;
+    top: 35%;
+    width: 2rem;
+    transform: scale(0);
+  }
+
+  @keyframes bubbleOne {
+    0% {
+      -webkit-transform: scale(0) translateY(0);
+      transform: scale(0) translateY(0);
+    }
+    25% {
+      -webkit-transform: scale(1) translateY(0);
+      transform: scale(1) translateY(0);
+    }
+    100% {
+      -webkit-transform: scale(1) translateX(0.2em) translateY(-60vh);
+      transform: scale(1) translateX(0.2em) translateY(-60vh);
     }
   }
 }
@@ -101,7 +145,12 @@
     }
 
     p {
-      color: var(--para);
+      color: var(--textcolor);
+    }
+
+    .out {
+      color: var(--headertext);
+      font-weight: bold;
     }
   }
 
@@ -138,7 +187,7 @@
       color: var(--headertext);
     }
     p {
-      color: var(--lighttext);
+      color: var(--textcolor);
     }
 
     .processflex {
@@ -150,6 +199,9 @@
         flex-direction: column;
       }
       .processimg {
+        max-width: 150px;
+        margin-top: 2.175rem;
+        margin-right: 2rem;
         .processinner {
           width: 100px;
           height: 100px;
@@ -168,7 +220,7 @@
           color: var(--headertext);
         }
         p {
-          color: var(--lighttext);
+          color: var(--textcolor);
         }
       }
     }
@@ -197,7 +249,7 @@
   }
 
   p {
-    color: var(--lighttext);
+    color: var(--textcolor);
   }
   .showcaseflex2 {
     display: flex;
@@ -248,9 +300,12 @@
       //spadding-left: 1rem;
     }
 
-    h3,
-    p {
+    h3 {
       color: var(--headertext);
+    }
+
+    p {
+      color: var(--textcolor);
     }
   }
 }
@@ -277,37 +332,3 @@
 }
 
 ///////////////////////////////////////////@extend
-.bubbles {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.bubble {
-  animation: bubbleOne 3s ease-in infinite;
-  border-radius: 50%;
-  box-shadow: inset 0 0 0.5em 0 rgba(255, 255, 255, 0.5);
-  height: 2rem;
-  left: -20px;
-  position: absolute;
-  top: 35%;
-  width: 2rem;
-  transform: scale(0);
-}
-
-@keyframes bubbleOne {
-  0% {
-    -webkit-transform: scale(0) translateY(0);
-    transform: scale(0) translateY(0);
-  }
-  25% {
-    -webkit-transform: scale(1) translateY(0);
-    transform: scale(1) translateY(0);
-  }
-  100% {
-    -webkit-transform: scale(1) translateX(0.2em) translateY(-60vh);
-    transform: scale(1) translateX(0.2em) translateY(-60vh);
-  }
-}

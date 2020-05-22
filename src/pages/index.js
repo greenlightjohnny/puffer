@@ -2,6 +2,7 @@ import React from "react"
 import Styles from "./main.module.scss"
 import Fish from "../images/blowfish.svg"
 import Navbar from "../components/navbar"
+import Talk from "../images/bluetalk.svg"
 export default () => (
   <div>
     <section className={Styles.landing}>
@@ -34,7 +35,7 @@ export default () => (
         <div className={Styles.name}>
           <h2 data-sal="slide-left" data-sal-delay="300" data-sal-easing="ease">
             {" "}
-            Electric Eel
+            About
           </h2>
           <p
             data-sal="fade"
@@ -42,11 +43,13 @@ export default () => (
             data-sal-easing="ease-in"
             data-sal-duration="1000"
           >
-            I'm <strong>Fred Jones</strong> and Electric Eel is my freelance{" "}
-            <strong>Web Development</strong> studio. Based out of{" "}
-            <strong>Roanoke, VA</strong>
-            and <strong>Bangkok, Thailand</strong> I work with clients around
-            the world to create unique websites.
+            I'm <span className={Styles.out}>Fred Jones</span>, and{" "}
+            <span className={Styles.out}> Puffer Fish Designs</span> is my
+            freelance <span className={Styles.out}> Web development</span>,
+            studio. Based out of{" "}
+            <span className={Styles.out}>Roanoke, VA </span> and{" "}
+            <span className={Styles.out}> Bangkok, Thailand, </span> I work with
+            clients around the world to create unique websites.
           </p>
           <p
             data-sal="fade"
@@ -54,9 +57,9 @@ export default () => (
             data-sal-easing="ease-in"
             data-sal-duration="1000"
           >
-            Typically I only take on <strong>one new client project</strong> at
-            a time, allowing me to focus all my creative energy and coding for a
-            single project.
+            Typically I only take on one
+            <span className={Styles.out}> new client</span>, at a time, allowing
+            me to focus all my creative energy and coding for a single project.
           </p>
           <p
             data-sal="fade"
@@ -65,12 +68,14 @@ export default () => (
             data-sal-duration="1000"
           >
             My goals are to create a unique, fast, and user friendly website.
-            For this I use <strong>Gatsby</strong>, instead of the more common
-            WordPress. Gatsby sites load much <strong>faster</strong>, have{" "}
-            <strong>better SEO</strong>, are <strong>More Secure</strong>, and
-            as a result typically end up <strong>ranking higher</strong> in
-            Google search results. This translates to more traffic to your
-            website, and a higher retention rate due to the Blazing fast load
+            For this I use <span className={Styles.out}>Gatsby</span>, instead
+            of the more common WordPress. Gatsby sites load much{" "}
+            <span className={Styles.out}>faster</span>, have{" "}
+            <span className={Styles.out}> better SEO</span>, are{" "}
+            <span className={Styles.out}> more secure</span>, and as a result
+            typically end up <span className={Styles.out}> ranking higher</span>{" "}
+            in Google search results. This translates to more traffic to your
+            website, and a higher retention rate due to the blazing fast load
             times and easy to navigate designs.
           </p>
         </div>
@@ -96,7 +101,7 @@ export default () => (
 
         <div className={Styles.processflex}>
           <div className={Styles.processimg}>
-            <div className={Styles.processinner}></div>
+            <img src={Talk} alt="Two people talking at a table"></img>
           </div>
           <div className={Styles.processinfo}>
             <h3
@@ -115,7 +120,9 @@ export default () => (
               In person (if we are close), phone or video calls. We discuss your
               goals for the website, I answer any questions about web
               development. It's always free, and there is zero pressure. Web
-              development is my passion, and I am happy to give advice!
+              development is my passion, and I am happy to give advice! If I
+              don't think I can deliver exactly what you are looking for, I will
+              do my best to point you in the correct direction.
             </p>
           </div>
         </div>
