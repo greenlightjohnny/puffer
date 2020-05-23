@@ -3,6 +3,10 @@ import Styles from "./main.module.scss"
 import Fish from "../images/blowfish.svg"
 import Navbar from "../components/navbar"
 import Talk from "../images/bluetalk.svg"
+import Plan from "../images/plan.svg"
+import Comm from "../images/comm.svg"
+import Content from "../images/content.svg"
+import Form from "../components/form"
 export default () => (
   <div>
     <section className={Styles.landing}>
@@ -11,7 +15,7 @@ export default () => (
         <div className={Styles.title}>
           {" "}
           <h1>
-            Blow<span className={Styles.spantitle}>fish</span> Studios
+            Puffer<span className={Styles.spantitle}>fish</span> Labs
           </h1>
           <p>
             <span className={Styles.high}>Custom </span>website development.{" "}
@@ -44,7 +48,7 @@ export default () => (
             data-sal-duration="1000"
           >
             I'm <span className={Styles.out}>Fred Jones</span>, and{" "}
-            <span className={Styles.out}> Puffer Fish Designs</span> is my
+            <span className={Styles.out}> Puffer Fish Labs</span> is my
             freelance <span className={Styles.out}> Web development</span>,
             studio. Based out of{" "}
             <span className={Styles.out}>Roanoke, VA </span> and{" "}
@@ -58,7 +62,7 @@ export default () => (
             data-sal-duration="1000"
           >
             Typically I only take on one
-            <span className={Styles.out}> new client</span>, at a time, allowing
+            <span className={Styles.out}> new client</span> at a time, allowing
             me to focus all my creative energy and coding for a single project.
           </p>
           <p
@@ -73,7 +77,7 @@ export default () => (
             <span className={Styles.out}>faster</span>, have{" "}
             <span className={Styles.out}> better SEO</span>, are{" "}
             <span className={Styles.out}> more secure</span>, and as a result
-            typically end up <span className={Styles.out}> ranking higher</span>{" "}
+            usually end up <span className={Styles.out}> ranking higher</span>{" "}
             in Google search results. This translates to more traffic to your
             website, and a higher retention rate due to the blazing fast load
             times and easy to navigate designs.
@@ -87,7 +91,9 @@ export default () => (
 
     <section className={Styles.process}>
       <div className={Styles.processcon}>
-        <h2>The Process</h2>
+        <h2 data-sal="zoom-in" data-sal-delay="400" data-sal-easing="ease">
+          The Process
+        </h2>
         <p
           data-sal="fade"
           data-sal-delay="400"
@@ -129,7 +135,10 @@ export default () => (
 
         <div className={Styles.processflex}>
           <div className={Styles.processimg}>
-            <div className={Styles.processinner}></div>
+            <img
+              src={Plan}
+              alt="Whiteboard with a person pointing at a plan on it"
+            ></img>
           </div>
           <div className={Styles.processinfo}>
             <h3
@@ -156,7 +165,7 @@ export default () => (
 
         <div className={Styles.processflex}>
           <div className={Styles.processimg}>
-            <div className={Styles.processinner}></div>
+            <img src={Comm} alt="Texts between two people"></img>
           </div>
 
           {/* <div className={Styles.processflex}>
@@ -190,7 +199,10 @@ export default () => (
         </div>
         <div className={Styles.processflex}>
           <div className={Styles.processimg}>
-            <div className={Styles.processinner}></div>
+            <img
+              src={Content}
+              alt="Writing on a wall with a person standing by it"
+            ></img>
           </div>
           <div className={Styles.processinfo}>
             <h3
@@ -220,13 +232,13 @@ export default () => (
 
     <section className={Styles.showcase}>
       <div className={Styles.showcaseflex}>
-        <h2 data-sal="slide-right" data-sal-delay="300" data-sal-easing="ease">
+        <h2 data-sal="zoom-in" data-sal-delay="400" data-sal-easing="ease">
           Showcase
         </h2>
         <div className={Styles.showcaseflex2}>
           <div className={Styles.showcasetitle}>
             <h3
-              data-sal="slide-right"
+              data-sal="slide-left"
               data-sal-delay="300"
               data-sal-easing="ease"
             >
@@ -241,7 +253,7 @@ export default () => (
         <div className={Styles.showcaseflex2}>
           <div className={Styles.showcasetitle}>
             <h3
-              data-sal="slide-right"
+              data-sal="slide-left"
               data-sal-delay="300"
               data-sal-easing="ease"
             >
@@ -256,7 +268,7 @@ export default () => (
         <div className={Styles.showcaseflex2}>
           <div className={Styles.showcasetitle}>
             <h3
-              data-sal="slide-right"
+              data-sal="slide-left"
               data-sal-delay="300"
               data-sal-easing="ease"
             >
@@ -270,7 +282,13 @@ export default () => (
         </div>
         <div className={Styles.showcaseflex2}>
           <div className={Styles.showcasetitle}>
-            <h3>Project Name</h3>
+            <h3
+              data-sal="slide-left"
+              data-sal-delay="300"
+              data-sal-easing="ease"
+            >
+              Project Name
+            </h3>
             <p>Lorem lorem lorem lorem lorem</p>
           </div>
           <div className={Styles.showcaseimg}>
@@ -279,7 +297,13 @@ export default () => (
         </div>
         <div className={Styles.showcaseflex2}>
           <div className={Styles.showcasetitle}>
-            <h3>Project Name</h3>
+            <h3
+              data-sal="slide-left"
+              data-sal-delay="300"
+              data-sal-easing="ease"
+            >
+              Project Name
+            </h3>
             <p>Lorem lorem lorem lorem lorem</p>
           </div>
           <div className={Styles.showcaseimg}>
@@ -342,6 +366,20 @@ export default () => (
         </p>
       </div>
     </section>
+
+    <section className={Styles.contact}>
+      <div className={Styles.contactflex}>
+        <h1 data-sal="zoom-in" data-sal-delay="300" data-sal-easing="ease">
+          Contact
+        </h1>
+        <p>
+          Feel free to reach out with any questions using the contact form
+          below.
+        </p>
+        <Form />
+      </div>
+    </section>
+
     <section className={Styles.waves}>
       <svg width="100%" height="200px" fill="none">
         <path

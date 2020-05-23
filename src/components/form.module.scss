@@ -1,0 +1,53 @@
+.myform {
+  input {
+    display: block;
+    margin-bottom: 1rem;
+    max-width: 400px;
+    border-radius: 10px;
+    border: 1px solid #1eaedb;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  textarea {
+    width: 100%;
+    min-height: 200px;
+    line-height: 25px;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid #1eaedb;
+  }
+
+  input[type="textarea"] {
+    width: 100%;
+    min-height: 200px;
+    line-height: 25px;
+
+    textarea {
+      height: 100%;
+    }
+  }
+}
+
+.flexmini {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: space-between;
+}
+
+button {
+  background-color: #1eaedb;
+  color: #f4f4f4;
+  width: 150px;
+  border: none;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  border-radius: 10px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
