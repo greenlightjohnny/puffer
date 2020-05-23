@@ -9,6 +9,8 @@ module.exports = {
   plugins: [
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-sass`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
 
     {
       resolve: `gatsby-plugin-typography`,
@@ -30,6 +32,14 @@ module.exports = {
         rootMargin: "0% 50%", // Corresponds to root's bounding box margin
         enterEventName: "sal:in", // Enter event name
         exitEventName: "sal:out", // Exit event name
+      },
+    },
+
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images/`,
       },
     },
 

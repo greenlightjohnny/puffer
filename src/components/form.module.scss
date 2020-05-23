@@ -27,6 +27,21 @@
       height: 100%;
     }
   }
+
+  button {
+    background-color: #1eaedb;
+    color: #f4f4f4;
+    width: 150px;
+    border: none;
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    border-radius: 10px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
 
 .flexmini {
@@ -35,19 +50,4 @@
   flex-wrap: wrap;
   flex: 1;
   justify-content: space-between;
-}
-
-button {
-  background-color: #1eaedb;
-  color: #f4f4f4;
-  width: 150px;
-  border: none;
-  font-weight: bold;
-  padding-bottom: 0.5rem;
-  padding-top: 0.5rem;
-  border-radius: 10px;
-
-  &:hover {
-    cursor: pointer;
-  }
 }

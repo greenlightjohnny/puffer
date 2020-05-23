@@ -7,7 +7,10 @@ import Plan from "../images/plan.svg"
 import Comm from "../images/comm.svg"
 import Content from "../images/content.svg"
 import Form from "../components/form"
-export default () => (
+import Img from "gatsby-image"
+import { graphql } from "gatsby"
+
+const Main = props => (
   <div>
     <section className={Styles.landing}>
       <Navbar />
@@ -22,7 +25,8 @@ export default () => (
             <br></br> Blazing <span className={Styles.high}>fast</span> load
             times.
             <br></br>
-            <span className={Styles.high}>Innovative </span>designs.
+            <span className={Styles.high}>Innovative </span>designs. <br></br>
+            Kittens<span className={Styles.high}>*</span>
           </p>
         </div>
         <div className={Styles.fish}>
@@ -49,7 +53,7 @@ export default () => (
           >
             I'm <span className={Styles.out}>Fred Jones</span>, and{" "}
             <span className={Styles.out}> Puffer Fish Labs</span> is my
-            freelance <span className={Styles.out}> Web development</span>,
+            freelance <span className={Styles.out}> Web development </span>
             studio. Based out of{" "}
             <span className={Styles.out}>Roanoke, VA </span> and{" "}
             <span className={Styles.out}> Bangkok, Thailand, </span> I work with
@@ -64,16 +68,23 @@ export default () => (
             Typically I only take on one
             <span className={Styles.out}> new client</span> at a time, allowing
             me to focus all my creative energy and coding for a single project.
+            Depending on the project scope and size I will bring in{" "}
+            <span className={Styles.out}> outside help </span>
+            as needed, such as{" "}
+            <span className={Styles.out}> graphic designers</span> (often one of
+            my <span className={Styles.out}> sisters</span>). I do all the
+            coding, usually using React.
           </p>
+
           <p
             data-sal="fade"
             data-sal-delay="400"
             data-sal-easing="ease-in"
             data-sal-duration="1000"
           >
-            My goals are to create a unique, fast, and user friendly website.
-            For this I use <span className={Styles.out}>Gatsby</span>, instead
-            of the more common WordPress. Gatsby sites load much{" "}
+            My goal is to create a unique, fast, and user friendly websites. For
+            this I use <span className={Styles.out}>Gatsby</span>, instead of
+            the more common WordPress. Gatsby sites load much{" "}
             <span className={Styles.out}>faster</span>, have{" "}
             <span className={Styles.out}> better SEO</span>, are{" "}
             <span className={Styles.out}> more secure</span>, and as a result
@@ -84,7 +95,7 @@ export default () => (
           </p>
         </div>
         <div className={Styles.fish}>
-          <img src={Fish} alt="Cute blowfish cartoon"></img>
+          <Img fluid={props.data.front.childImageSharp.fluid} />
         </div>
       </div>
     </section>
@@ -224,6 +235,58 @@ export default () => (
               optomized images and fast load times, but it is important to
               remember that delivering what the user searched for is the best
               way to improve your rankings.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section className={Styles.case}>
+      <div className={Styles.casetop}>
+        <h2>Showcase</h2>
+        <p>Here are a few of some of my past creations.</p>
+      </div>
+      <div className={Styles.caseflex}>
+        <div className={Styles.caseinner}>
+          <div className={Styles.casetitle}>
+            <h3>Project Name</h3>
+          </div>
+          <div className={Styles.caseimg}>
+            <Img fluid={props.data.front2.childImageSharp.fluid} />
+          </div>
+          <div className={Styles.casefooter}>
+            <p>
+              Info about here more more more more more more more more more more
+              more more
+            </p>
+          </div>
+        </div>
+
+        <div className={Styles.caseinner}>
+          <div className={Styles.casetitle}>
+            <h3>Project Name</h3>
+          </div>
+          <div className={Styles.caseimg}>
+            <Img fluid={props.data.front2.childImageSharp.fluid} />
+          </div>
+          <div className={Styles.casefooter}>
+            <p>
+              Info about here more more more more more more more more more more
+              more more
+            </p>
+          </div>
+        </div>
+
+        <div className={Styles.caseinner}>
+          <div className={Styles.casetitle}>
+            <h3>Project Name</h3>
+          </div>
+          <div className={Styles.caseimg}>
+            <Img fluid={props.data.front2.childImageSharp.fluid} />
+          </div>
+          <div className={Styles.casefooter}>
+            <p>
+              Info about here more more more more more more more more more more
+              more more
             </p>
           </div>
         </div>
@@ -468,3 +531,24 @@ export default () => (
     </footer>
   </div>
 )
+
+export const query = graphql`
+  query {
+    front: file(relativePath: { eq: "aablack2.jpeg" }) {
+      childImageSharp {
+        fluid(maxWidth: 900) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    front2: file(relativePath: { eq: "min.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 900) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
+export default Main
