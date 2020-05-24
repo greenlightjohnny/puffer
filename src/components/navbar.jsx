@@ -33,7 +33,7 @@ function Navbar() {
     <div className={Style.container}>
       <h3>
         <Navlink to="/">
-          Blow<span className={Style.spantitle}>Fish</span>
+          Puffer<span className={Style.spantitle}>Fish</span>
         </Navlink>
       </h3>
       <Darkmodetoggle />

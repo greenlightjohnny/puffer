@@ -8,6 +8,9 @@ import Comm from "../images/comm.svg"
 import Content from "../images/content.svg"
 import Form from "../components/form"
 import Img from "gatsby-image"
+import Rtool from "../images/react.svg"
+import Gtool from "../images/gatsby.svg"
+import Qtool from "../images/graphql.svg"
 import { graphql } from "gatsby"
 
 const Main = props => (
@@ -43,7 +46,7 @@ const Main = props => (
         <div className={Styles.name}>
           <h2 data-sal="slide-left" data-sal-delay="300" data-sal-easing="ease">
             {" "}
-            About
+            <span className={Styles.under}>About</span>
           </h2>
           <p
             data-sal="fade"
@@ -103,7 +106,7 @@ const Main = props => (
     <section className={Styles.process}>
       <div className={Styles.processcon}>
         <h2 data-sal="zoom-in" data-sal-delay="400" data-sal-easing="ease">
-          The Process
+          <span className={Styles.under}>The Process</span>
         </h2>
         <p
           data-sal="fade"
@@ -242,11 +245,19 @@ const Main = props => (
     </section>
     <section className={Styles.case}>
       <div className={Styles.casetop}>
-        <h2>Showcase</h2>
+        <h2>
+          <span className={Styles.under}>Showcase</span>
+        </h2>
         <p>Here are a few of some of my past creations.</p>
       </div>
       <div className={Styles.caseflex}>
-        <div className={Styles.caseinner}>
+        <div
+          data-sal="slide-down"
+          data-sal-delay="100"
+          data-sal-easing="ease-in"
+          data-sal-duration="500"
+          className={Styles.caseinner}
+        >
           <div className={Styles.casetitle}>
             <h3>Project Name</h3>
           </div>
@@ -261,7 +272,13 @@ const Main = props => (
           </div>
         </div>
 
-        <div className={Styles.caseinner}>
+        <div
+          data-sal="slide-down"
+          data-sal-delay="700"
+          data-sal-easing="ease-in"
+          data-sal-duration="500"
+          className={Styles.caseinner}
+        >
           <div className={Styles.casetitle}>
             <h3>Project Name</h3>
           </div>
@@ -276,7 +293,13 @@ const Main = props => (
           </div>
         </div>
 
-        <div className={Styles.caseinner}>
+        <div
+          data-sal="slide-down"
+          data-sal-delay="1000"
+          data-sal-easing="ease"
+          data-sal-duration="500"
+          className={Styles.caseinner}
+        >
           <div className={Styles.casetitle}>
             <h3>Project Name</h3>
           </div>
@@ -293,7 +316,7 @@ const Main = props => (
       </div>
     </section>
 
-    <section className={Styles.showcase}>
+    {/* <section className={Styles.showcase}>
       <div className={Styles.showcaseflex}>
         <h2 data-sal="zoom-in" data-sal-delay="400" data-sal-easing="ease">
           Showcase
@@ -375,26 +398,67 @@ const Main = props => (
         </div>
         <div></div>
       </div>
-    </section>
+    </section> */}
     <section className={Styles.tech}>
       <div className={Styles.techflex}>
         <h2 data-sal="zoom-in" data-sal-delay="300" data-sal-easing="ease">
-          Our Technology
+          <span className={Styles.under}>Our Tools</span>
         </h2>
+        <div className={Styles.tools}>
+          <img src={Rtool} />
+          <img src={Gtool} />
+          <img src={Qtool} />
+        </div>
         <p
           data-sal="fade"
           data-sal-delay="400"
           data-sal-easing="ease-in"
           data-sal-duration="1000"
         >
-          Our primary development tool is Gatsby, a very new static site
+          Our primary development tool is{" "}
+          <span className={Styles.high}> Gatsby</span>, a very new static site
           generator. Behind the scenes, it is a huge change from your typical
-          \\\\\\\\\\ WordPress PHP developed website.
+          server rendered WordPress and PHP developed website. WordPress first
+          sends a request to a database when a user requests the site, and
+          renders an HTML page to the user from that. Gatsby generates static
+          HTML pages ahead of time, and serves those directly to the user when a
+          request is made. The advantages of static site generators such as
+          Gatsby are massive. Better Reliability, less complexity, faster load
+          times, enhanced SEO, and superior security to name a few. <br></br>
+          <br></br>
+          So how come everyone is not using Gatsby and other static site
+          generators instead of WordPress? A few reasons, the first being that
+          Gatsby is a new technology. Not as many people know about it, or how
+          to use it. Second, many clients are only familiar with WordPress and
+          request it without looking at other options. Third, because creating a
+          Gatsby site requires the developer to know Gatsby, React, and GraphQL
+          (all new technology) there are not as many Gatsby developers out
+          there. Finally, the cost of a Gatsby site is generally more than
+          someone reusing an old WordPress theme. For most clients the
+          additional initial development cost of Gatsby is returned quickly
+          through higher search engine rankings and increased customer
+          retention.
+        </p>
+      </div>
+
+      <div className={Styles.techflex}>
+        <h3 data-sal="zoom-in" data-sal-delay="300" data-sal-easing="ease">
+          Less Complexity
+        </h3>
+        <p
+          data-sal="fade"
+          data-sal-delay="400"
+          data-sal-easing="ease-in"
+          data-sal-duration="1000"
+        >
+          Once a Gatsby site is created there are less "moving parts", which
+          instantly makes it more reliable. There is no back end server
+          required.
         </p>
       </div>
       <div className={Styles.techflex}>
         <h3 data-sal="zoom-in" data-sal-delay="300" data-sal-easing="ease">
-          SPEED
+          GO FAST
         </h3>
         <p
           data-sal="fade"
@@ -404,10 +468,12 @@ const Main = props => (
         >
           How fast your website loads matters a massive amount. x number of
           people will abandon a website if it takes longer than x seconds to
-          load. Large, unptomized websites with a ton of useless plugins are
-          slow to load, and lose potential customers. Gatsby, unlike WordPress,
-          solves a large part of this by preparing the website to send ahead of
-          time.
+          load. Gatsby is offers blazing fast load times, and automatically
+          optimizes images no matter what size screen the user has. Gatsby also
+          works in the background to pre-fetch different pages of the website,
+          so that when the user clicks an internal link the load time is
+          virtually instant. Fast websites also rank higher in Google searches,
+          improving your SEO.
         </p>
       </div>
       <div className={Styles.techflex}>
@@ -422,10 +488,29 @@ const Main = props => (
         >
           Guess what? Turns out that load times factor into how Google ranks
           websites in search results. Excellent news if you are using Gatsby.
+          Terrible news if you are still using the dinosaur that is WordPress.
           Even better, since Gatsby is pre made, it is much easier for robots to
           crawl it much easier than server rendered websites (such as
           WordPress). This also helps connect users to the content they were
-          searching for.
+          searching for. How much of a boost does Google give for fast load
+          times? No one knows.
+        </p>
+      </div>
+
+      <div className={Styles.techflex}>
+        <h3 data-sal="zoom-in" data-sal-delay="300" data-sal-easing="ease">
+          Reliability
+        </h3>
+        <p
+          data-sal="fade"
+          data-sal-delay="400"
+          data-sal-easing="ease-in"
+          data-sal-duration="1000"
+        >
+          Static site generators such as Gatsby are inherently more reliable.
+          There is no database server that can fail, less risk over overloading
+          the site processing requests, and less risk of being hacked. They are
+          easily delivered by CDN's
         </p>
       </div>
     </section>
@@ -433,7 +518,7 @@ const Main = props => (
     <section className={Styles.contact}>
       <div className={Styles.contactflex}>
         <h1 data-sal="zoom-in" data-sal-delay="300" data-sal-easing="ease">
-          Contact
+          <span className={Styles.under}>Contact</span>
         </h1>
         <p>
           Feel free to reach out with any questions using the contact form
@@ -512,7 +597,7 @@ const Main = props => (
     <footer className={Styles.footer}>
       <div className={Styles.innerfooter}>
         <p>
-          Build with{" "}
+          Built with{" "}
           <svg
             stroke="currentColor"
             fill="red"

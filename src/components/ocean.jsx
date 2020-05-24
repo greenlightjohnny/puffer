@@ -1,5 +1,5 @@
 import React from "react"
-
-const Ocean = () => <div className={Styless.ocean}></div>
+import Styles from "./module.ocean.scss"
+const Ocean = () => <div className={Styles.ocean}></div>
 
 export default Ocean
