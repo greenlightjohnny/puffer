@@ -103,6 +103,249 @@ const Main = props => (
       </div>
     </section>
 
+    <section className={Styles.process2}>
+      <div className={Styles.process2top}>
+        <h2 data-sal="zoom-in" data-sal-delay="400" data-sal-easing="ease">
+          <span className={Styles.under}>The Process</span>
+        </h2>
+        <p
+          data-sal="fade"
+          data-sal-delay="400"
+          data-sal-easing="ease-in"
+          data-sal-duration="1000"
+        >
+          This is totally flexible! Because I only have one major project at a
+          time, it is extremely easy to implement new requests during the
+          development process.
+        </p>
+      </div>
+      <div className={Styles.process2flex}>
+        <div className={Styles.flex1}>
+          <h3>Start</h3>
+          <div className={Styles.process2inner}>
+            <p>Hello</p>
+            <svg className={Styles.lines} width="100%" height="100%">
+              <line
+                className={Styles.line}
+                x1="50%"
+                y1="0"
+                x2="0"
+                y2="0"
+                stroke="#000"
+              ></line>
+              <line
+                className={Styles.line}
+                x1="50%"
+                y1="0"
+                x2="100%"
+                y2="0"
+                stroke="#000"
+              ></line>
+              <line
+                className={Styles.line}
+                x1="0"
+                y1="0"
+                x2="0"
+                y2="100%"
+                stroke="#000"
+              ></line>
+              <line
+                className={Styles.line}
+                x1="100%"
+                y1="0"
+                x2="100%"
+                y2="100%"
+                stroke="#000"
+              ></line>
+              <line
+                className={Styles.line}
+                x1="0%"
+                y1="100%"
+                x2="50%"
+                y2="100%"
+                stroke="#000"
+              ></line>
+              <line
+                className={Styles.line}
+                x1="100%"
+                y1="100%"
+                x2="50%"
+                y2="100%"
+                stroke="#000"
+              ></line>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div className={Styles.schemapart}>
+        <h3>Planning</h3>
+        <div className={Styles.schemparent}>
+          <div className={Styles.schemgroup}>
+            <div className={Styles.schemitem}>
+              <h4>Project Proposal</h4>
+              <p>
+                We send you a basic outline of the project based on our
+                conversation. This includes needed website features, number of
+                pages, an estimated timeline, recommendations, and of course an
+                estimated cost.
+              </p>
+            </div>
+          </div>
+
+          <div className={Styles.schemgroup}>
+            <div className={Styles.schemitem}>
+              <h4>Design</h4>
+              <p>
+                Sometimes the hardest part! We use Adobe XD to draw up a general
+                website outline, and you decide if you want custom graphics
+                and/or animations.
+              </p>
+            </div>
+          </div>
+          <div className={Styles.schemgroup}>
+            <div className={Styles.schemitem}>
+              <h4>Agreement</h4>
+              <p>
+                If both parties are happy with we finalize a contract and move
+                onto the development stage.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <svg className={Styles.lines} width="100%" height="100%">
+          <line
+            className={Styles.line}
+            x1="50%"
+            y1="0"
+            x2="0"
+            y2="0"
+            stroke="#000"
+          ></line>
+          <line
+            className={Styles.line}
+            x1="50%"
+            y1="0"
+            x2="100%"
+            y2="0"
+            stroke="#000"
+          ></line>
+          <line
+            className={Styles.line}
+            x1="0"
+            y1="0"
+            x2="0"
+            y2="100%"
+            stroke="#000"
+          ></line>
+          <line
+            className={Styles.line}
+            x1="100%"
+            y1="0"
+            x2="100%"
+            y2="100%"
+            stroke="#000"
+          ></line>
+          <line
+            className={Styles.line}
+            x1="0%"
+            y1="100%"
+            x2="50%"
+            y2="100%"
+            stroke="#000"
+          ></line>
+          <line
+            className={Styles.line}
+            x1="100%"
+            y1="100%"
+            x2="50%"
+            y2="100%"
+            stroke="#000"
+          ></line>
+        </svg>
+      </div>
+
+      <div className={Styles.schemapart}>
+        <h3>Planning</h3>
+        <div className={Styles.schemparent}>
+          <div className={Styles.schemgroup}>
+            <div className={Styles.schemitem}>
+              <h4>Project Proposal</h4>
+              <p>
+                We send you a basic outline of the project based on our
+                conversation. This includes needed website features, number of
+                pages, an estimated timeline, recommendations, and of course an
+                estimated cost.
+              </p>
+            </div>
+          </div>
+
+          <div className={Styles.schemgroup}>
+            <div className={Styles.schemitem}>
+              <h4>Design</h4>
+              <p>
+                Sometimes the hardest part! We use Adobe XD to draw up a general
+                website outline, and you decide if you want custom graphics
+                and/or animations.
+              </p>
+            </div>
+          </div>
+
+          <svg className={Styles.lines} width="100%" height="100%">
+            <line
+              className={Styles.line}
+              x1="50%"
+              y1="0"
+              x2="0"
+              y2="0"
+              stroke="#000"
+            ></line>
+            <line
+              className={Styles.line}
+              x1="50%"
+              y1="0"
+              x2="100%"
+              y2="0"
+              stroke="#000"
+            ></line>
+            <line
+              className={Styles.line}
+              x1="0"
+              y1="0"
+              x2="0"
+              y2="100%"
+              stroke="#000"
+            ></line>
+            <line
+              className={Styles.line}
+              x1="100%"
+              y1="0"
+              x2="100%"
+              y2="100%"
+              stroke="#000"
+            ></line>
+            <line
+              className={Styles.line}
+              x1="0%"
+              y1="100%"
+              x2="50%"
+              y2="100%"
+              stroke="#000"
+            ></line>
+            <line
+              className={Styles.line}
+              x1="100%"
+              y1="100%"
+              x2="50%"
+              y2="100%"
+              stroke="#000"
+            ></line>
+          </svg>
+        </div>
+      </div>
+    </section>
+
     <section className={Styles.process}>
       <div className={Styles.processcon}>
         <h2 data-sal="zoom-in" data-sal-delay="400" data-sal-easing="ease">
