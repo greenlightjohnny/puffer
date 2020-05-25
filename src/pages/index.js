@@ -486,7 +486,7 @@ export const query = graphql`
       }
     }
 
-    front2: file(relativePath: { eq: "min.jpg" }) {
+    front2: file(relativePath: { eq: "design.png" }) {
       childImageSharp {
         fluid(maxWidth: 900) {
           ...GatsbyImageSharpFluid
