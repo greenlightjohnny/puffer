@@ -250,6 +250,140 @@ const Process = () => (
         </svg>
       </div>
     </div>
+
+    <div className={Styles.schemapart2}>
+      <h3>Testing/Deployment</h3>
+      <div className={Styles.schemparent2}>
+        <div className={Styles.schemgroup}>
+          <div className={Styles.schemitem}>
+            <h4>Pure Chaos</h4>
+            <p>
+              If things don't go sideways with no warning is the project really
+              even a real project?
+            </p>
+          </div>
+        </div>
+
+        <svg className={Styles.lines} width="100%" height="100%">
+          {/* <line
+              className={Styles.line}
+              x1="50%"
+              y1="0"
+              x2="0"
+              y2="0"
+              stroke="#000"
+            ></line> */}
+          {/* <line
+              className={Styles.line}
+              x1="50%"
+              y1="0"
+              x2="100%"
+              y2="0"
+              stroke="#000"
+            ></line> */}
+          <line
+            className={Styles.line}
+            x1="0"
+            y1="0"
+            x2="0"
+            y2="100%"
+            stroke="#000"
+          ></line>
+          <line
+            className={Styles.line}
+            x1="100%"
+            y1="0"
+            x2="100%"
+            y2="100%"
+            stroke="#000"
+          ></line>
+          <line
+            className={Styles.line}
+            x1="0%"
+            y1="100%"
+            x2="50%"
+            y2="100%"
+            stroke="#000"
+          ></line>
+          <line
+            className={Styles.line}
+            x1="100%"
+            y1="100%"
+            x2="50%"
+            y2="100%"
+            stroke="#000"
+          ></line>
+        </svg>
+      </div>
+    </div>
+
+    <div className={Styles.schemapart2}>
+      <h3>Success!</h3>
+      <div className={Styles.schemparent2}>
+        <div className={Styles.schemgroup}>
+          <div className={Styles.schemitem}>
+            <h4>Live</h4>
+            <p>
+              We turn the live website over to you and move onto our next
+              project! We offer ongoing monthly support/update/revision
+              packages, emergency support, or you can just sit back and never
+              speak to us again!
+            </p>
+          </div>
+        </div>
+
+        <svg className={Styles.lines} width="100%" height="100%">
+          {/* <line
+              className={Styles.line}
+              x1="50%"
+              y1="0"
+              x2="0"
+              y2="0"
+              stroke="#000"
+            ></line> */}
+          {/* <line
+              className={Styles.line}
+              x1="50%"
+              y1="0"
+              x2="100%"
+              y2="0"
+              stroke="#000"
+            ></line> */}
+          <line
+            className={Styles.line}
+            x1="0"
+            y1="0"
+            x2="0"
+            y2="100%"
+            stroke="#000"
+          ></line>
+          <line
+            className={Styles.line}
+            x1="100%"
+            y1="0"
+            x2="100%"
+            y2="100%"
+            stroke="#000"
+          ></line>
+          <line
+            className={Styles.line}
+            x1="0%"
+            y1="100%"
+            x2="50%"
+            y2="100%"
+            stroke="#000"
+          ></line>
+          <line
+            className={Styles.line}
+            x1="100%"
+            y1="100%"
+            x2="50%"
+            y2="100%"
+            stroke="#000"
+          ></line>
+        </svg>
+      </div>
+    </div>
   </section>
 )
 

@@ -20,7 +20,11 @@ const Services = ({ data }) => (
           <img className={Styles.cardtop} src={Pics}></img>
           <div className={Styles.cardbottom}>
             <h3>Web Development</h3>
-            <p>We bring ideas to life</p>
+            <p>
+              We bring ideas to life with Gatsby powered greatness. We are
+              focused on creating awesome looking and super fast loading
+              websites.
+            </p>
           </div>
         </div>
       </a>
@@ -28,8 +32,11 @@ const Services = ({ data }) => (
         <div className={Styles.flexitem}>
           <img className={Styles.cardtop} src={Des}></img>
           <div className={Styles.cardbottom}>
-            <h3>Web Development</h3>
-            <p>We bring ideas to life</p>
+            <h3>Design</h3>
+            <p>
+              We take a mobile first design approach with unique styling.
+              Responsive, eye catching, and{" "}
+            </p>
           </div>
         </div>
       </a>
@@ -37,8 +44,11 @@ const Services = ({ data }) => (
         <div className={Styles.flexitem}>
           <img className={Styles.cardtop} src={Des2}></img>
           <div className={Styles.cardbottom}>
-            <h3>Web Development</h3>
-            <p>We bring ideas to life</p>
+            <h3>Consulting</h3>
+            <p>
+              Need a comprehensive review of your online presence? We are here
+              to help! Social media, SEO, marketing, and branding we do it all.{" "}
+            </p>
           </div>
         </div>
       </a>
