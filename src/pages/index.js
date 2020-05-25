@@ -12,6 +12,8 @@ import Rtool from "../images/react.svg"
 import Gtool from "../images/gatsby.svg"
 import Qtool from "../images/graphql.svg"
 import { graphql } from "gatsby"
+import Processes from "../components/newprocess"
+import Services from "../components/services"
 
 const Main = props => (
   <div>
@@ -40,6 +42,7 @@ const Main = props => (
         </div>
       </div>
     </section>
+    <Services />
 
     <section className={Styles.intro}>
       <div className={Styles.introflex}>
@@ -54,13 +57,11 @@ const Main = props => (
             data-sal-easing="ease-in"
             data-sal-duration="1000"
           >
-            I'm <span className={Styles.out}>Fred Jones</span>, and{" "}
-            <span className={Styles.out}> Puffer Fish Labs</span> is my
-            freelance <span className={Styles.out}> Web development </span>
-            studio. Based out of{" "}
+            We are<span className={Styles.out}> Puffer Fish Labs</span>, a small
+            fully remote web development agency. Based out of{" "}
             <span className={Styles.out}>Roanoke, VA </span> and{" "}
-            <span className={Styles.out}> Bangkok, Thailand, </span> I work with
-            clients around the world to create unique websites.
+            <span className={Styles.out}> Bangkok, Thailand, </span> we work
+            with clients around the world to create unique websites.
           </p>
           <p
             data-sal="fade"
@@ -68,15 +69,12 @@ const Main = props => (
             data-sal-easing="ease-in"
             data-sal-duration="1000"
           >
-            Typically I only take on one
+            Typically we only take on one
             <span className={Styles.out}> new client</span> at a time, allowing
-            me to focus all my creative energy and coding for a single project.
-            Depending on the project scope and size I will bring in{" "}
+            us to focus all our creative energy and coding into single project.
+            Depending on the project scope and size we will bring in{" "}
             <span className={Styles.out}> outside help </span>
-            as needed, such as{" "}
-            <span className={Styles.out}> graphic designers</span> (often one of
-            my <span className={Styles.out}> sisters</span>). I do all the
-            coding, usually using React.
+            as needed.
           </p>
 
           <p
@@ -85,8 +83,8 @@ const Main = props => (
             data-sal-easing="ease-in"
             data-sal-duration="1000"
           >
-            My goal is to create a unique, fast, and user friendly websites. For
-            this I use <span className={Styles.out}>Gatsby</span>, instead of
+            Our goal to create a unique, fast, and user friendly websites. For
+            this we use <span className={Styles.out}>Gatsby</span>, instead of
             the more common WordPress. Gatsby sites load much{" "}
             <span className={Styles.out}>faster</span>, have{" "}
             <span className={Styles.out}> better SEO</span>, are{" "}
@@ -102,396 +100,17 @@ const Main = props => (
         </div>
       </div>
     </section>
+    <Processes />
 
-    <section className={Styles.process2}>
-      <div className={Styles.process2top}>
-        <h2 data-sal="zoom-in" data-sal-delay="400" data-sal-easing="ease">
-          <span className={Styles.under}>The Process</span>
-        </h2>
-        <p
-          data-sal="fade"
-          data-sal-delay="400"
-          data-sal-easing="ease-in"
-          data-sal-duration="1000"
-        >
-          This is totally flexible! Because I only have one major project at a
-          time, it is extremely easy to implement new requests during the
-          development process.
-        </p>
-      </div>
-      <div className={Styles.process2flex}>
-        <div className={Styles.flex1}>
-          <h3>Start</h3>
-          <div className={Styles.process2inner}>
-            <p>Hello</p>
-            <svg className={Styles.lines} width="100%" height="100%">
-              <line
-                className={Styles.line}
-                x1="50%"
-                y1="0"
-                x2="0"
-                y2="0"
-                stroke="#000"
-              ></line>
-              <line
-                className={Styles.line}
-                x1="50%"
-                y1="0"
-                x2="100%"
-                y2="0"
-                stroke="#000"
-              ></line>
-              <line
-                className={Styles.line}
-                x1="0"
-                y1="0"
-                x2="0"
-                y2="100%"
-                stroke="#000"
-              ></line>
-              <line
-                className={Styles.line}
-                x1="100%"
-                y1="0"
-                x2="100%"
-                y2="100%"
-                stroke="#000"
-              ></line>
-              <line
-                className={Styles.line}
-                x1="0%"
-                y1="100%"
-                x2="50%"
-                y2="100%"
-                stroke="#000"
-              ></line>
-              <line
-                className={Styles.line}
-                x1="100%"
-                y1="100%"
-                x2="50%"
-                y2="100%"
-                stroke="#000"
-              ></line>
-            </svg>
-          </div>
-        </div>
-      </div>
-
-      <div className={Styles.schemapart}>
-        <h3>Planning</h3>
-        <div className={Styles.schemparent}>
-          <div className={Styles.schemgroup}>
-            <div className={Styles.schemitem}>
-              <h4>Project Proposal</h4>
-              <p>
-                We send you a basic outline of the project based on our
-                conversation. This includes needed website features, number of
-                pages, an estimated timeline, recommendations, and of course an
-                estimated cost.
-              </p>
-            </div>
-          </div>
-
-          <div className={Styles.schemgroup}>
-            <div className={Styles.schemitem}>
-              <h4>Design</h4>
-              <p>
-                Sometimes the hardest part! We use Adobe XD to draw up a general
-                website outline, and you decide if you want custom graphics
-                and/or animations.
-              </p>
-            </div>
-          </div>
-          <div className={Styles.schemgroup}>
-            <div className={Styles.schemitem}>
-              <h4>Agreement</h4>
-              <p>
-                If both parties are happy with we finalize a contract and move
-                onto the development stage.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <svg className={Styles.lines} width="100%" height="100%">
-          <line
-            className={Styles.line}
-            x1="50%"
-            y1="0"
-            x2="0"
-            y2="0"
-            stroke="#000"
-          ></line>
-          <line
-            className={Styles.line}
-            x1="50%"
-            y1="0"
-            x2="100%"
-            y2="0"
-            stroke="#000"
-          ></line>
-          <line
-            className={Styles.line}
-            x1="0"
-            y1="0"
-            x2="0"
-            y2="100%"
-            stroke="#000"
-          ></line>
-          <line
-            className={Styles.line}
-            x1="100%"
-            y1="0"
-            x2="100%"
-            y2="100%"
-            stroke="#000"
-          ></line>
-          <line
-            className={Styles.line}
-            x1="0%"
-            y1="100%"
-            x2="50%"
-            y2="100%"
-            stroke="#000"
-          ></line>
-          <line
-            className={Styles.line}
-            x1="100%"
-            y1="100%"
-            x2="50%"
-            y2="100%"
-            stroke="#000"
-          ></line>
-        </svg>
-      </div>
-
-      <div className={Styles.schemapart}>
-        <h3>Planning</h3>
-        <div className={Styles.schemparent}>
-          <div className={Styles.schemgroup}>
-            <div className={Styles.schemitem}>
-              <h4>Project Proposal</h4>
-              <p>
-                We send you a basic outline of the project based on our
-                conversation. This includes needed website features, number of
-                pages, an estimated timeline, recommendations, and of course an
-                estimated cost.
-              </p>
-            </div>
-          </div>
-
-          <div className={Styles.schemgroup}>
-            <div className={Styles.schemitem}>
-              <h4>Design</h4>
-              <p>
-                Sometimes the hardest part! We use Adobe XD to draw up a general
-                website outline, and you decide if you want custom graphics
-                and/or animations.
-              </p>
-            </div>
-          </div>
-
-          <svg className={Styles.lines} width="100%" height="100%">
-            <line
-              className={Styles.line}
-              x1="50%"
-              y1="0"
-              x2="0"
-              y2="0"
-              stroke="#000"
-            ></line>
-            <line
-              className={Styles.line}
-              x1="50%"
-              y1="0"
-              x2="100%"
-              y2="0"
-              stroke="#000"
-            ></line>
-            <line
-              className={Styles.line}
-              x1="0"
-              y1="0"
-              x2="0"
-              y2="100%"
-              stroke="#000"
-            ></line>
-            <line
-              className={Styles.line}
-              x1="100%"
-              y1="0"
-              x2="100%"
-              y2="100%"
-              stroke="#000"
-            ></line>
-            <line
-              className={Styles.line}
-              x1="0%"
-              y1="100%"
-              x2="50%"
-              y2="100%"
-              stroke="#000"
-            ></line>
-            <line
-              className={Styles.line}
-              x1="100%"
-              y1="100%"
-              x2="50%"
-              y2="100%"
-              stroke="#000"
-            ></line>
-          </svg>
-        </div>
-      </div>
-    </section>
-
-    <section className={Styles.process}>
-      <div className={Styles.processcon}>
-        <h2 data-sal="zoom-in" data-sal-delay="400" data-sal-easing="ease">
-          <span className={Styles.under}>The Process</span>
-        </h2>
-        <p
-          data-sal="fade"
-          data-sal-delay="400"
-          data-sal-easing="ease-in"
-          data-sal-duration="1000"
-        >
-          This is totally flexible! Because I only have one major project at a
-          time, it is extremely easy to implement new requests during the
-          development process.
-        </p>
-
-        <div className={Styles.processflex}>
-          <div className={Styles.processimg}>
-            <img src={Talk} alt="Two people talking at a table"></img>
-          </div>
-          <div className={Styles.processinfo}>
-            <h3
-              data-sal="slide-right"
-              data-sal-delay="300"
-              data-sal-easing="ease"
-            >
-              Initial Consultation
-            </h3>
-            <p
-              data-sal="fade"
-              data-sal-delay="400"
-              data-sal-easing="ease-in"
-              data-sal-duration="1000"
-            >
-              In person (if we are close), phone or video calls. We discuss your
-              goals for the website, I answer any questions about web
-              development. It's always free, and there is zero pressure. Web
-              development is my passion, and I am happy to give advice! If I
-              don't think I can deliver exactly what you are looking for, I will
-              do my best to point you in the correct direction.
-            </p>
-          </div>
-        </div>
-
-        <div className={Styles.processflex}>
-          <div className={Styles.processimg}>
-            <img
-              src={Plan}
-              alt="Whiteboard with a person pointing at a plan on it"
-            ></img>
-          </div>
-          <div className={Styles.processinfo}>
-            <h3
-              data-sal="slide-right"
-              data-sal-delay="300"
-              data-sal-easing="ease"
-            >
-              Project Proposal
-            </h3>
-            <p
-              data-sal="fade"
-              data-sal-delay="400"
-              data-sal-easing="ease-in"
-              data-sal-duration="1000"
-            >
-              Based on our conversation, I send you a proposal with a fixed
-              price and estimated timeline. I won't ever run over budget, even
-              if I have to eat the costs. During the development process minor
-              changes are free, major ones which lengthen the project time can
-              be discussed.
-            </p>
-          </div>
-        </div>
-
-        <div className={Styles.processflex}>
-          <div className={Styles.processimg}>
-            <img src={Comm} alt="Texts between two people"></img>
-          </div>
-
-          {/* <div className={Styles.processflex}>
-            <div className={Styles.processimg}>
-              <div className={Styles.processinner}></div>
-            </div>
-          </div> */}
-          <div className={Styles.processinfo}>
-            <h3
-              data-sal="slide-right"
-              data-sal-delay="300"
-              data-sal-easing="ease"
-            >
-              Communication
-            </h3>
-            <p
-              data-sal="fade"
-              data-sal-delay="400"
-              data-sal-easing="ease-in"
-              data-sal-duration="1000"
-            >
-              During the development you are welcome to be involved as little or
-              as much as you would like. Great communication is key, so you will
-              be kept updated during the entire process. Because Electric Eel is
-              a small studio, your single point of contact is me. Instead of the
-              sales department, or a manager, you will be talking directly to
-              the person working on your websites. In my opinion this provides
-              much better feedback and less chances for miss-communications.
-            </p>
-          </div>
-        </div>
-        <div className={Styles.processflex}>
-          <div className={Styles.processimg}>
-            <img
-              src={Content}
-              alt="Writing on a wall with a person standing by it"
-            ></img>
-          </div>
-          <div className={Styles.processinfo}>
-            <h3
-              data-sal="slide-right"
-              data-sal-delay="300"
-              data-sal-easing="ease"
-            >
-              Quality Content
-            </h3>
-            <p
-              data-sal="fade"
-              data-sal-delay="400"
-              data-sal-easing="ease-in"
-              data-sal-duration="1000"
-            >
-              Nothing helps your website rank higher than having high quality
-              content. The days of fooling search engines with keyword stuffing
-              are long gone. I handle the behind the scenes SEO, such as
-              optomized images and fast load times, but it is important to
-              remember that delivering what the user searched for is the best
-              way to improve your rankings.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
     <section className={Styles.case}>
       <div className={Styles.casetop}>
         <h2>
           <span className={Styles.under}>Showcase</span>
         </h2>
-        <p>Here are a few of some of my past creations.</p>
+        <p>
+          Some of our past work we can share, hopefully we can future yours one
+          day.
+        </p>
       </div>
       <div className={Styles.caseflex}>
         <div
@@ -502,16 +121,13 @@ const Main = props => (
           className={Styles.caseinner}
         >
           <div className={Styles.casetitle}>
-            <h3>Project Name</h3>
+            <h3>Minimal Gap</h3>
           </div>
           <div className={Styles.caseimg}>
             <Img fluid={props.data.front2.childImageSharp.fluid} />
           </div>
           <div className={Styles.casefooter}>
-            <p>
-              Info about here more more more more more more more more more more
-              more more
-            </p>
+            <p>Bee Keeping</p>
           </div>
         </div>
 
@@ -854,7 +470,7 @@ const Main = props => (
           </svg>{" "}
           and Gatsby
         </p>
-        <p>© 2020 Fred Jones</p>
+        <p>© 2020 Puffer Fish Labs</p>
       </div>
     </footer>
   </div>
