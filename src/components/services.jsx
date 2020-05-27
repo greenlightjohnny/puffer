@@ -44,7 +44,7 @@ const Services = ({ data }) => (
         <div className={Styles.flexitem}>
           <img className={Styles.cardtop} src={Des2}></img>
           <div className={Styles.cardbottom}>
-            <h3>Consulting</h3>
+            <h3>SEO</h3>
             <p>
               Need a comprehensive review of your online presence? We are here
               to help! Social media, SEO, marketing, and branding we do it all.{" "}
