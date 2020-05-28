@@ -124,7 +124,7 @@ const Main = props => (
             <h3>Minimal Gap</h3>
           </div>
           <div className={Styles.caseimg}>
-            <Img fluid={props.data.front2.childImageSharp.fluid} />
+            <Img fluid={props.data.front.childImageSharp.fluid} />
           </div>
           <div className={Styles.casefooter}>
             <p>Bee Keeping</p>
