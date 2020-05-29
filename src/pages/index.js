@@ -160,7 +160,7 @@ const Main = props => (
           className={Styles.caseinner}
         >
           <div className={Styles.casetitle}>
-            <h3>Project Name</h3>
+            <h3>Sunrise</h3>
           </div>
           <div className={Styles.caseimg}>
             <Img fluid={props.data.front2.childImageSharp.fluid} />
