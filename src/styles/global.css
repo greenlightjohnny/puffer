@@ -46,7 +46,7 @@ div[role="group"][tabindex] {
   --under: #1f6bff;
   --bg2: #fff;
   --bubble: #1eaedb;
-
+  --cardbg: #fff;
   --back: #fafafa;
   transition: all 2s ease;
 }
@@ -71,6 +71,7 @@ div[role="group"][tabindex] {
   --under: #1eaedb;
   --bg2: #1a1919;
   --bubble: rgba(255, 255, 255, 0.5);
+  --cardbg: #201f1f;
 
   transition: color 2s ease;
   transition: all 2s ease;

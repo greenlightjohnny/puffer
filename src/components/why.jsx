@@ -4,13 +4,18 @@ import Style from "./why.module.scss"
 const Why = () => (
   <section className={Style.main}>
     <div className={Style.maintitle}>
-      <h2>
+      <h2 data-sal="slide-left" data-sal-delay="300" data-sal-easing="ease">
         <span className={Style.under}>The Technology</span>
       </h2>
-      <p>We use new technology because it is better, not because it is new</p>
+      <p>We use new technology when it is better, not because it is new.</p>
     </div>
     <div className={Style.mainflex}>
-      <div className={Style.flexitem}>
+      <div
+        className={Style.flexitem}
+        data-sal="slide-up"
+        data-sal-delay="300"
+        data-sal-easing="ease"
+      >
         <h3>
           <span>JAMstack</span>
         </h3>
@@ -25,7 +30,12 @@ const Why = () => (
           info on why JAMstack is the way of the future!
         </p>
       </div>
-      <div className={Style.flexitem}>
+      <div
+        className={Style.flexitem}
+        data-sal="slide-up"
+        data-sal-delay="800"
+        data-sal-easing="ease"
+      >
         <h3>
           <span>Gatsby</span>
         </h3>
@@ -43,7 +53,12 @@ const Why = () => (
       </div>
     </div>
     <div className={Style.mainflex}>
-      <div className={Style.flexitem}>
+      <div
+        className={Style.flexitem}
+        data-sal="slide-up"
+        data-sal-delay="300"
+        data-sal-easing="ease"
+      >
         <h3>
           <span>React</span>
         </h3>
@@ -55,7 +70,12 @@ const Why = () => (
         </p>
       </div>
 
-      <div className={Style.flexitem}>
+      <div
+        className={Style.flexitem}
+        data-sal="slide-up"
+        data-sal-delay="300"
+        data-sal-easing="ease"
+      >
         <h3>
           <span>Scale</span>
         </h3>
