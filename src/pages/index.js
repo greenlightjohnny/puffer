@@ -167,8 +167,8 @@ const Main = props => (
           </div>
           <div className={Styles.casefooter}>
             <p>
-              Info about here more more more more more more more more more more
-              more more
+              Info about here mmoreee ore more more more more more more more
+              more more more more
             </p>
           </div>
         </div>
