@@ -14,6 +14,7 @@ import Qtool from "../images/graphql.svg"
 import { graphql } from "gatsby"
 import Processes from "../components/newprocess"
 import Services from "../components/services"
+import Why from "../components/why"
 
 const Main = props => (
   <div>
@@ -101,6 +102,7 @@ const Main = props => (
       </div>
     </section>
     <Processes />
+    <Why />
 
     <section className={Styles.case}>
       <div className={Styles.casetop}>
@@ -258,7 +260,7 @@ const Main = props => (
         <div></div>
       </div>
     </section> */}
-    <section className={Styles.tech}>
+    {/* <section className={Styles.tech}>
       <div className={Styles.techflex}>
         <h2 data-sal="zoom-in" data-sal-delay="300" data-sal-easing="ease">
           <span className={Styles.under}>Our Tools</span>
@@ -372,7 +374,7 @@ const Main = props => (
           easily delivered by CDN's
         </p>
       </div>
-    </section>
+    </section> */}
 
     <section className={Styles.contact}>
       <div className={Styles.contactflex}>

@@ -14,6 +14,7 @@
   height: 100vh;
   background-attachment: fixed;
   //background-color: black;
+  background-color: var(--light1);
   .landingflex {
     display: flex;
     flex-direction: row;
@@ -79,7 +80,7 @@
         font-size: 1.3rem;
       }
       h1 {
-        color: #40c4fb;
+        color: #1f6bff;
         font-size: 3rem;
       }
     }
@@ -102,7 +103,7 @@
   .bubble {
     animation: bubbleOne 3s ease-in 4.4s infinite;
     border-radius: 50%;
-    box-shadow: inset 0 0 0.5em 0 rgba(255, 255, 255, 0.5);
+    box-shadow: inset 0 0 0.5em 0 var(--bubble);
     height: 2rem;
     left: -20px;
     position: absolute;
