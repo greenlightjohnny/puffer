@@ -15,16 +15,17 @@ import { graphql } from "gatsby"
 import Processes from "../components/newprocess"
 import Services from "../components/services"
 import Why from "../components/why"
+import Face from "../images/svgface.svg"
 
 const Main = props => (
   <div>
-    <section className={Styles.landing}>
+    <section id="home" className={Styles.landing}>
       <Navbar />
       <div className={Styles.landingflex}>
         <div className={Styles.title}>
           {" "}
           <h1>
-            Puffer<span className={Styles.spantitle}>fish</span> Labs
+            Puffer<span className={Styles.spantitle}>Fish</span> Labs
           </h1>
           <p>
             <span className={Styles.high}>Custom </span>website development.{" "}
@@ -45,7 +46,7 @@ const Main = props => (
     </section>
     <Services />
 
-    <section className={Styles.intro}>
+    <section id="about" className={Styles.intro}>
       <div className={Styles.introflex}>
         <div className={Styles.name}>
           <h2 data-sal="slide-left" data-sal-delay="300" data-sal-easing="ease">
@@ -104,20 +105,25 @@ const Main = props => (
     <Processes />
     <Why />
 
-    <section className={Styles.case}>
+    <section id="showcase" className={Styles.case}>
       <div className={Styles.casetop}>
-        <h2>
+        <h2
+          data-sal="slide-left"
+          data-sal-delay="300"
+          data-sal-easing="ease"
+          data-sal-duration="1000"
+        >
           <span className={Styles.under}>Showcase</span>
         </h2>
         <p>
-          Some of our past work we can share, hopefully we can future yours one
-          day.
+          Some of our past work we can share, hopefully we can feature yours one
+          day!
         </p>
       </div>
       <div className={Styles.caseflex}>
         <div
-          data-sal="slide-down"
-          data-sal-delay="100"
+          data-sal="zoom-in"
+          data-sal-delay="200"
           data-sal-easing="ease-in"
           data-sal-duration="500"
           className={Styles.caseinner}
@@ -126,7 +132,10 @@ const Main = props => (
             <h3>Minimal Gap</h3>
           </div>
           <div className={Styles.caseimg}>
-            <Img fluid={props.data.front.childImageSharp.fluid} />
+            <Img
+              objectFit="cover"
+              fluid={props.data.front3.childImageSharp.fluid}
+            />
           </div>
           <div className={Styles.casefooter}>
             <p>Bee Keeping</p>
@@ -134,17 +143,20 @@ const Main = props => (
         </div>
 
         <div
-          data-sal="slide-down"
-          data-sal-delay="700"
+          data-sal="zoom-in"
+          data-sal-delay="500"
           data-sal-easing="ease-in"
-          data-sal-duration="500"
-          className={Styles.caseinner}
+          data-sal-duration="750"
+          className={Styles.caseinner2}
         >
           <div className={Styles.casetitle}>
-            <h3>Project Name</h3>
+            <h3>React Portfolio</h3>
           </div>
           <div className={Styles.caseimg}>
-            <Img fluid={props.data.front2.childImageSharp.fluid} />
+            <Img
+              objectFit="cover"
+              fluid={props.data.front4.childImageSharp.fluid}
+            />
           </div>
           <div className={Styles.casefooter}>
             <p>
@@ -155,17 +167,20 @@ const Main = props => (
         </div>
 
         <div
-          data-sal="slide-down"
-          data-sal-delay="1000"
-          data-sal-easing="ease"
-          data-sal-duration="500"
-          className={Styles.caseinner}
+          data-sal="zoom-in"
+          data-sal-delay="800"
+          data-sal-easing="ease-in"
+          data-sal-duration="1000"
+          className={Styles.caseinner3}
         >
           <div className={Styles.casetitle}>
-            <h3>Sunrise</h3>
+            <h3>her2.me</h3>
           </div>
           <div className={Styles.caseimg}>
-            <Img fluid={props.data.front2.childImageSharp.fluid} />
+            <Img
+              objectFit="cover"
+              fluid={props.data.front5.childImageSharp.fluid}
+            />
           </div>
           <div className={Styles.casefooter}>
             <p>
@@ -376,10 +391,15 @@ const Main = props => (
       </div>
     </section> */}
 
-    <section className={Styles.contact}>
+    <section id="contact" className={Styles.contact}>
       <div className={Styles.contactflex}>
-        <h1 data-sal="zoom-in" data-sal-delay="300" data-sal-easing="ease">
-          <span className={Styles.under}>Contact</span>
+        <h1
+          data-sal="slide-left"
+          data-sal-delay="300"
+          data-sal-easing="ease"
+          data-sal-duration="400"
+        >
+          <span className={Styles.under}>Say Hello.</span>
         </h1>
         <p>
           Feel free to reach out with any questions using the contact form
@@ -489,6 +509,30 @@ export const query = graphql`
     }
 
     front2: file(relativePath: { eq: "design.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 300, maxHeight: 300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    front3: file(relativePath: { eq: "min2.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 300, maxHeight: 300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    front4: file(relativePath: { eq: "face2.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 900) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    front5: file(relativePath: { eq: "her2.png" }) {
       childImageSharp {
         fluid(maxWidth: 900) {
           ...GatsbyImageSharpFluid

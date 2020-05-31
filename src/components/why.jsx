@@ -4,7 +4,12 @@ import Style from "./why.module.scss"
 const Why = () => (
   <section className={Style.main}>
     <div className={Style.maintitle}>
-      <h2 data-sal="slide-left" data-sal-delay="300" data-sal-easing="ease">
+      <h2
+        data-sal="slide-left"
+        data-sal-delay="300"
+        data-sal-easing="ease"
+        data-sal-duration="700"
+      >
         <span className={Style.under}>The Technology</span>
       </h2>
       <p>We use new technology when it is better, not because it is new.</p>
@@ -15,6 +20,7 @@ const Why = () => (
         data-sal="slide-up"
         data-sal-delay="300"
         data-sal-easing="ease"
+        data-sal-duration="500"
       >
         <h3>
           <span>JAMstack</span>
@@ -35,6 +41,7 @@ const Why = () => (
         data-sal="slide-up"
         data-sal-delay="800"
         data-sal-easing="ease"
+        data-sal-duration="500"
       >
         <h3>
           <span>Gatsby</span>
@@ -58,6 +65,7 @@ const Why = () => (
         data-sal="slide-up"
         data-sal-delay="300"
         data-sal-easing="ease"
+        data-sal-duration="500"
       >
         <h3>
           <span>React</span>
@@ -75,6 +83,7 @@ const Why = () => (
         data-sal="slide-up"
         data-sal-delay="300"
         data-sal-easing="ease"
+        data-sal-duration="500"
       >
         <h3>
           <span>Scale</span>

@@ -5,6 +5,7 @@ import Shockedp from "../images/tacacs.jpeg"
 import useDarkMode from "use-dark-mode"
 import Toggle from "./toggle"
 import Darkmodetoggle from "./darkmode"
+import { Link } from "gatsby"
 
 const Navlink = props => (
   <AniLink
@@ -44,19 +45,22 @@ function Navbar() {
       >
         <ul>
           <li onClick={() => setNavnames(false)}>
-            <Navlink to="/">Home</Navlink>
+            <Link to="#home">Home</Link>
           </li>
-          <li>
-            <Navlink to="/memes">About</Navlink>
+          <li onClick={() => setNavnames(!navnames)}>
+            <Link to="/#about">About</Link>
           </li>
-          <li>
-            <Navlink to="/lobbying">Process</Navlink>
+          <li onClick={() => setNavnames(!navnames)}>
+            <Link to="#services">Services</Link>
           </li>
-          <li>
-            <Navlink to="/about">Showcase</Navlink>
+          <li onClick={() => setNavnames(!navnames)}>
+            <Link to="#process">Process</Link>
           </li>
-          <li>
-            <Navlink to="/about">Contact</Navlink>
+          <li onClick={() => setNavnames(!navnames)}>
+            <Link to="#showcase">Showcase</Link>
+          </li>
+          <li onClick={() => setNavnames(!navnames)}>
+            <Link to="#contact">Contact</Link>
           </li>
         </ul>
       </nav>

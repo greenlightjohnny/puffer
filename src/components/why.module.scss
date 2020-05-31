@@ -19,7 +19,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 3rem;
+    //margin-top: 3rem;
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -33,6 +33,8 @@
     flex: 1;
     padding: 1.5rem;
     margin: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
     padding-bottom: 0;
     min-width: 350px;
     background-color: var(--cardbg);
@@ -57,7 +59,7 @@
       transition: all 0.3s ease-in-out 0s;
 
       span {
-        background-image: linear-gradient(#40c4fb, transparent 70%);
+        background-image: linear-gradient(var(--gra), var(--gra2) 70%);
         padding: 9px 30px;
         padding-bottom: 20px;
         border-top-left-radius: 30px;

@@ -2,9 +2,14 @@ import React from "react"
 import Styles from "./process.module.scss"
 
 const Process = () => (
-  <section className={Styles.process2}>
+  <section id="process" className={Styles.process2}>
     <div className={Styles.process2top}>
-      <h2 data-sal="zoom-in" data-sal-delay="400" data-sal-easing="ease">
+      <h2
+        data-sal="zoom-in"
+        data-sal-delay="300"
+        data-sal-easing="ease"
+        data-sal-duration="400"
+      >
         <span className={Styles.under}>The Process</span>
       </h2>
       <p
@@ -18,7 +23,75 @@ const Process = () => (
         are much easier.
       </p>
     </div>
-    <div className={Styles.process2flex}>
+    <div className={Styles.schemapart4}>
+      <h3>Start</h3>
+      <div className={Styles.schemparent2}>
+        <div className={Styles.schemgroup}>
+          <div className={Styles.schemitem}>
+            <h4>Let's Talk</h4>
+            <p>
+              Give us a call and tell us about your plans! It's totally free and
+              we are happy to answer any questions you have. If we don't think
+              our services would benefit you, or your project is outside of our
+              scope, we will do our best to point you in the correct direction.
+              Never any pressure. 100% honesty.
+            </p>
+          </div>
+        </div>
+
+        <svg className={Styles.lines} width="100%" height="100%">
+          <line
+            className={Styles.line}
+            x1="50%"
+            y1="0"
+            x2="0"
+            y2="0"
+            stroke="#000"
+          ></line>
+          <line
+            className={Styles.line}
+            x1="50%"
+            y1="0"
+            x2="100%"
+            y2="0"
+            stroke="#000"
+          ></line>
+          <line
+            className={Styles.line}
+            x1="0"
+            y1="0"
+            x2="0"
+            y2="100%"
+            stroke="#000"
+          ></line>
+          <line
+            className={Styles.line}
+            x1="100%"
+            y1="0"
+            x2="100%"
+            y2="100%"
+            stroke="#000"
+          ></line>
+          {/* <line
+            className={Styles.line}
+            x1="0%"
+            y1="100%"
+            x2="50%"
+            y2="100%"
+            stroke="#000"
+          ></line>
+          <line
+            className={Styles.line}
+            x1="100%"
+            y1="100%"
+            x2="50%"
+            y2="100%"
+            stroke="#000"
+          ></line> */}
+        </svg>
+      </div>
+    </div>
+    {/* <div className={Styles.process2flex}>
       <div className={Styles.flex1}>
         <h3>Start</h3>
         <div className={Styles.process2inner}>
@@ -67,22 +140,22 @@ const Process = () => (
               className={Styles.line}
               x1="0%"
               y1="100%"
-              x2="50%"
+              x2="0"
               y2="100%"
               stroke="#000"
             ></line>
             <line
               className={Styles.line}
-              x1="100%"
+              x1="0"
               y1="100%"
-              x2="50%"
+              x2="0"
               y2="100%"
               stroke="#000"
             ></line>
           </svg>
         </div>
       </div>
-    </div>
+    </div> */}
 
     <div className={Styles.schemapart}>
       <h3>Planning</h3>
@@ -251,7 +324,7 @@ const Process = () => (
       </div>
     </div>
 
-    <div className={Styles.schemapart2}>
+    <div className={Styles.schemapart3}>
       <h3>Testing/Deployment</h3>
       <div className={Styles.schemparent2}>
         <div className={Styles.schemgroup}>

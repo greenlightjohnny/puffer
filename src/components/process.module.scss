@@ -25,11 +25,13 @@
     margin: 0 auto;
   }
   h3 {
-    background-color: #40c4fb;
+    // background-color: #40c4fb;
+    background-color: #2961cf;
     display: inline-block;
     color: var(--headertext);
-
-    padding: 5px 10px;
+    //margin-bottom: -14px;
+    padding: 5px 50px;
+    border-radius: 100px;
   }
 
   .flex1 {
@@ -47,6 +49,7 @@
     //height: 300px;
     padding: 20px;
     padding-top: 10px;
+    margin-top: 1rem;
     //border: 1px solid #000;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 5px 0px,
       rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 3px 1px -2px;
@@ -66,7 +69,7 @@
 
   .line {
     stroke: #1eaedb;
-    stroke-width: 4;
+    stroke-width: 7;
     stroke-dashoffset: 0;
     stroke-dasharray: 5;
 
@@ -80,16 +83,17 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  margin-top: 80px;
+  margin-top: 82px;
   //background-color: #fff;
 
   h3 {
     text-align: center;
-    margin-top: -38px;
+    margin-top: -42px;
     background-color: #40c4fb;
     display: inline-block;
     color: var(--headertext);
-    padding: 5px 10px;
+    padding: 5px 50px;
+    border-radius: 100px;
   }
 }
 
@@ -100,7 +104,7 @@
   flex-wrap: wrap;
   justify-content: center;
   max-width: 100%;
-  margin-top: -9px;
+  margin-top: -6px;
 }
 
 .schemparent2 {
@@ -123,14 +127,58 @@
   //background-color: #fff;
 
   h3 {
-    //position: absolute;
+    position: absolute;
     text-align: center;
     margin-top: -60px;
     margin-bottom: 20px;
     background-color: #40c4fb;
     display: inline-block;
     color: var(--headertext);
+    padding: 5px 50px;
+    border-radius: 100px;
+  }
+}
+
+.schemapart3 {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 90px;
+  //background-color: #fff;
+
+  h3 {
+    position: absolute;
+    text-align: center;
+    margin-top: -70px;
+    margin-bottom: 20px;
+    background-color: #40c4fb;
+    display: inline-block;
+    color: var(--headertext);
     padding: 5px 10px;
+  }
+}
+
+.schemapart4 {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 80px;
+  margin-bottom: -15px;
+  //background-color: #fff;
+
+  h3 {
+    position: absolute;
+    text-align: center;
+    margin-top: -70px;
+    margin-bottom: 20px;
+    background-color: #40c4fb;
+    display: inline-block;
+    color: var(--headertext);
+    padding: 5px 50px;
   }
 }
 

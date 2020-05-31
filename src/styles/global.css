@@ -19,6 +19,7 @@ body {
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 *,
 *:before,
@@ -43,11 +44,14 @@ div[role="group"][tabindex] {
   --headertext: black;
   --para: rgb(80, 80, 80);
   --textcolor: #080808;
+  --textcolor2: rgb(130, 142, 153);
   --under: #1f6bff;
   --bg2: #fff;
   --bubble: #1eaedb;
   --cardbg: #fff;
   --back: #fafafa;
+  --gra: #40c4fb;
+  --gra2: transparent;
   transition: all 2s ease;
 }
 .dark-mode {
@@ -57,9 +61,10 @@ div[role="group"][tabindex] {
   color: #999;
   --bg: white;
   /* --lightb: #2e2727; */
-  --textcolor: rgba(255, 255, 255, 0.5);
+  /* --textcolor: rgba(255, 255, 255, 0.5); */
   /* --textcolor: #e8e8e9; */
-
+  --textcolor: rgb(195, 195, 195);
+  --textcolor2: rgb(130, 142, 153);
   --lightb: #080808;
   --lighttext: #f4f4f4;
   --textNormal: #222;
@@ -72,6 +77,8 @@ div[role="group"][tabindex] {
   --bg2: #1a1919;
   --bubble: rgba(255, 255, 255, 0.5);
   --cardbg: #201f1f;
+  --gra: #201f1f;
+  --gra2: transparent;
 
   transition: color 2s ease;
   transition: all 2s ease;

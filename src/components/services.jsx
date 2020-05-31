@@ -7,15 +7,27 @@ import Des from "../images/des.png"
 import Des2 from "../images/des2.png"
 
 const Services = ({ data }) => (
-  <section className={Styles.main}>
+  <section id="services" className={Styles.main}>
     <div className={Styles.maintitle}>
-      <h2 data-sal="slide-left" data-sal-delay="300" data-sal-easing="ease">
+      <h2
+        data-sal="slide-left"
+        data-sal-delay="300"
+        data-sal-easing="ease"
+        data-sal-duration="500"
+      >
         {" "}
         <span className={Styles.under}>Services</span>
       </h2>
     </div>
     <div className={Styles.mainflex}>
-      <a className={Styles.go} href="#">
+      <a
+        data-sal="zoom-in"
+        data-sal-delay="200"
+        data-sal-easing="ease-in"
+        data-sal-duration="500"
+        className={Styles.go}
+        href="#"
+      >
         <div className={Styles.flexitem}>
           <img className={Styles.cardtop} src={Pics}></img>
           <div className={Styles.cardbottom}>
@@ -28,7 +40,14 @@ const Services = ({ data }) => (
           </div>
         </div>
       </a>
-      <a className={Styles.go} href="#">
+      <a
+        data-sal="zoom-in"
+        data-sal-delay="500"
+        data-sal-easing="ease-in"
+        data-sal-duration="750"
+        className={Styles.go}
+        href="#"
+      >
         <div className={Styles.flexitem}>
           <img className={Styles.cardtop} src={Des}></img>
           <div className={Styles.cardbottom}>
@@ -40,7 +59,14 @@ const Services = ({ data }) => (
           </div>
         </div>
       </a>
-      <a className={Styles.go} href="#">
+      <a
+        data-sal="zoom-in"
+        data-sal-delay="800"
+        data-sal-easing="ease-in"
+        data-sal-duration="1000"
+        className={Styles.go}
+        href="#"
+      >
         <div className={Styles.flexitem}>
           <img className={Styles.cardtop} src={Des2}></img>
           <div className={Styles.cardbottom}>
