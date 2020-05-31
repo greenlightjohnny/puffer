@@ -27,7 +27,13 @@ const Process = () => (
       <h3>Start</h3>
       <div className={Styles.schemparent2}>
         <div className={Styles.schemgroup}>
-          <div className={Styles.schemitem}>
+          <div
+            data-sal="zoom-in"
+            data-sal-delay="200"
+            data-sal-easing="ease-in"
+            data-sal-duration="700"
+            className={Styles.schemitem}
+          >
             <h4>Let's Talk</h4>
             <p>
               Give us a call and tell us about your plans! It's totally free and
@@ -161,7 +167,13 @@ const Process = () => (
       <h3>Planning</h3>
       <div className={Styles.schemparent}>
         <div className={Styles.schemgroup}>
-          <div className={Styles.schemitem}>
+          <div
+            data-sal="zoom-in"
+            data-sal-delay="200"
+            data-sal-easing="ease-in"
+            data-sal-duration="700"
+            className={Styles.schemitem}
+          >
             <h4>Project Proposal</h4>
             <p>
               We send you a basic outline of the project based on our
@@ -173,7 +185,13 @@ const Process = () => (
         </div>
 
         <div className={Styles.schemgroup}>
-          <div className={Styles.schemitem}>
+          <div
+            data-sal="zoom-in"
+            data-sal-delay="200"
+            data-sal-easing="ease-in"
+            data-sal-duration="700"
+            className={Styles.schemitem}
+          >
             <h4>Design</h4>
             <p>
               Sometimes the hardest part! We use Adobe XD to draw up a general
@@ -183,7 +201,13 @@ const Process = () => (
           </div>
         </div>
         <div className={Styles.schemgroup}>
-          <div className={Styles.schemitem}>
+          <div
+            data-sal="zoom-in"
+            data-sal-delay="200"
+            data-sal-easing="ease-in"
+            data-sal-duration="700"
+            className={Styles.schemitem}
+          >
             <h4>Agreement</h4>
             <p>
               If both parties are happy with we finalize a contract and move
@@ -249,7 +273,13 @@ const Process = () => (
       <h3>Development</h3>
       <div className={Styles.schemparent}>
         <div className={Styles.schemgroup}>
-          <div className={Styles.schemitem}>
+          <div
+            data-sal="zoom-in"
+            data-sal-delay="200"
+            data-sal-easing="ease-in"
+            data-sal-duration="700"
+            className={Styles.schemitem}
+          >
             <h4>Agile</h4>
             <p>
               We usually use the Agile development flow, building a basic
@@ -261,7 +291,13 @@ const Process = () => (
         </div>
 
         <div className={Styles.schemgroup}>
-          <div className={Styles.schemitem}>
+          <div
+            data-sal="zoom-in"
+            data-sal-delay="200"
+            data-sal-easing="ease-in"
+            data-sal-duration="700"
+            className={Styles.schemitem}
+          >
             <h4>Revisions</h4>
             <p>
               Decided you want additional pages? Custom graphics? A different
@@ -328,7 +364,13 @@ const Process = () => (
       <h3>Testing/Deployment</h3>
       <div className={Styles.schemparent2}>
         <div className={Styles.schemgroup}>
-          <div className={Styles.schemitem}>
+          <div
+            data-sal="zoom-in"
+            data-sal-delay="200"
+            data-sal-easing="ease-in"
+            data-sal-duration="700"
+            className={Styles.schemitem}
+          >
             <h4>Pure Chaos</h4>
             <p>
               If things don't go sideways with no warning is the project really
@@ -394,7 +436,13 @@ const Process = () => (
       <h3>Success!</h3>
       <div className={Styles.schemparent2}>
         <div className={Styles.schemgroup}>
-          <div className={Styles.schemitem}>
+          <div
+            data-sal="zoom-in"
+            data-sal-delay="200"
+            data-sal-easing="ease-in"
+            data-sal-duration="700"
+            className={Styles.schemitem}
+          >
             <h4>Live</h4>
             <p>
               We turn the live website over to you and move onto our next

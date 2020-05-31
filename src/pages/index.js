@@ -2,20 +2,16 @@ import React from "react"
 import Styles from "./main.module.scss"
 import Fish from "../images/blowfish.svg"
 import Navbar from "../components/navbar"
-import Talk from "../images/bluetalk.svg"
-import Plan from "../images/plan.svg"
-import Comm from "../images/comm.svg"
-import Content from "../images/content.svg"
+
 import Form from "../components/form"
 import Img from "gatsby-image"
 import Rtool from "../images/react.svg"
 import Gtool from "../images/gatsby.svg"
 import Qtool from "../images/graphql.svg"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Processes from "../components/newprocess"
 import Services from "../components/services"
 import Why from "../components/why"
-import Face from "../images/svgface.svg"
 
 const Main = props => (
   <div>
@@ -33,7 +29,25 @@ const Main = props => (
             times.
             <br></br>
             <span className={Styles.high}>Innovative </span>designs. <br></br>
-            Kittens<span className={Styles.high}>*</span>
+            Gatsby <span className={Styles.high}>Kool-Aid </span> <br></br>
+            Kittens<span className={Styles.high}>*</span> <br></br>
+            <Link className={Styles.button1} to="#contact">
+              Contact{" "}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 20 19"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </Link>
           </p>
         </div>
         <div className={Styles.fish}>
@@ -49,7 +63,12 @@ const Main = props => (
     <section id="about" className={Styles.intro}>
       <div className={Styles.introflex}>
         <div className={Styles.name}>
-          <h2 data-sal="slide-left" data-sal-delay="300" data-sal-easing="ease">
+          <h2
+            data-sal="slide-left"
+            data-sal-delay="300"
+            data-sal-easing="ease"
+            data-sal-duration="1000"
+          >
             {" "}
             <span className={Styles.under}>About</span>
           </h2>
@@ -147,7 +166,7 @@ const Main = props => (
           data-sal-delay="500"
           data-sal-easing="ease-in"
           data-sal-duration="750"
-          className={Styles.caseinner2}
+          className={Styles.caseinner}
         >
           <div className={Styles.casetitle}>
             <h3>React Portfolio</h3>
@@ -168,10 +187,10 @@ const Main = props => (
 
         <div
           data-sal="zoom-in"
-          data-sal-delay="800"
+          data-sal-delay="600"
           data-sal-easing="ease-in"
           data-sal-duration="1000"
-          className={Styles.caseinner3}
+          className={Styles.caseinner}
         >
           <div className={Styles.casetitle}>
             <h3>her2.me</h3>
@@ -397,7 +416,7 @@ const Main = props => (
           data-sal="slide-left"
           data-sal-delay="300"
           data-sal-easing="ease"
-          data-sal-duration="400"
+          data-sal-duration="1000"
         >
           <span className={Styles.under}>Say Hello.</span>
         </h1>
@@ -409,11 +428,12 @@ const Main = props => (
       </div>
     </section>
 
-    <section className={Styles.waves}>
-      <svg width="100%" height="200px" fill="none">
-        <path
-          fill="#1eaedb"
-          d="
+    <footer className={Styles.footer}>
+      <section className={Styles.waves}>
+        <svg width="100%" height="200px" fill="none">
+          <path
+            fill="#1eaedb"
+            d="
                 M 0 67 
                 C 273,183
                   822,-40
@@ -423,13 +443,13 @@ const Main = props => (
                 H 0 
                 V 67 
                 Z"
-        >
-          <animate
-            repeatCount="indefinite"
-            fill="#454599"
-            attributeName="d"
-            dur="15s"
-            values="
+          >
+            <animate
+              repeatCount="indefinite"
+              fill="#454599"
+              attributeName="d"
+              dur="15s"
+              values="
             M0 77 
             C 473,283
               822,-40
@@ -470,12 +490,10 @@ const Main = props => (
             V 67 
             Z
             "
-          ></animate>
-        </path>
-      </svg>
-    </section>
-
-    <footer className={Styles.footer}>
+            ></animate>
+          </path>
+        </svg>
+      </section>
       <div className={Styles.innerfooter}>
         <p>
           Built with{" "}

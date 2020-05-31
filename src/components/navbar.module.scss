@@ -7,17 +7,18 @@
 .container {
   max-width: 1100px;
   margin: 0 auto;
+
   display: flex;
   flex: 1;
   justify-content: space-between;
 
   h3 {
     display: inline-block;
-    padding-left: 1rem;
+    padding-left: 2rem;
     padding-top: 10px;
     margin-top: 0;
     a {
-      color: #1eaedb;
+      color: #1f6bff;
       text-shadow: none;
       text-decoration: none;
       background-image: none;
@@ -33,7 +34,7 @@
     outline: none;
 
     &:hover {
-      color: #1eaedb;
+      color: #1f6bff;
     }
   }
 
@@ -191,7 +192,7 @@
   display: block;
   position: fixed;
   top: 10px;
-  right: 1rem;
+  right: 2rem;
 
   width: 30px;
   height: 30px;
@@ -217,14 +218,14 @@
 .navspan:before {
   height: 4px;
   border-radius: 1px;
-  color: #ed3e44;
+  color: #1f6bff;
   width: 100%;
 }
 
 .navspan {
   position: relative;
   display: block;
-  background: #ed3e44;
+  background: #1f6bff;
   transform: translateY(1px);
   transition: all 0ms 300ms;
 
@@ -238,7 +239,7 @@
   position: absolute;
   left: 0;
   bottom: 10px;
-  background: #ed3e44;
+  background: #1f6bff;
   transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
     transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -248,7 +249,7 @@
   position: absolute;
   left: 0;
   top: 10px;
-  background: #ed3e44;
+  background: #1f6bff;
   transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
     transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -286,7 +287,7 @@
     font-size: 1.7rem;
     background: none;
     border: none;
-    color: #ff7300;
+    color: #ebaf4b;
     cursor: pointer;
     transition: color 0.3s ease;
     &:last-child {
@@ -333,6 +334,6 @@ input[type="checkbox"].dmcheck {
     background: #fff;
     opacity: 0.9;
     //background-color: #f6f6f6;
-    background-color: rgb(25, 206, 245);
+    background-color: #1f6bff;
   }
 }

@@ -35,7 +35,27 @@ export default class MyForm extends React.Component {
           <label htmlFor="msg"></label>
           <textarea name="message" id="msg" cols="30" rows="10"></textarea>
           {/* <input type="textarea" name="message" /> */}
-          {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
+          {status === "SUCCESS" ? (
+            <p>Thanks!</p>
+          ) : (
+            <button>
+              Submit{" "}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 20 19"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          )}
           {status === "ERROR" && <p>Ooops! There was an error.</p>}
         </form>
       </div>

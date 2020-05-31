@@ -10,9 +10,36 @@ const Why = () => (
         data-sal-easing="ease"
         data-sal-duration="700"
       >
-        <span className={Style.under}>The Technology</span>
+        The<br></br>
+        <span className={Style.under}>Technology</span>
       </h2>
-      <p>We use new technology when it is better, not because it is new.</p>
+      <h3>
+        "A <span className={Style.yellowhigh}>one-second delay</span> in mobile
+        load times can impact conversion rates by up to{" "}
+        <span className={Style.yellowhigh}>20% </span>." -{" "}
+        <a href="https://www.thinkwithgoogle.com/intl/en-154/marketing-collections/mobile/milliseconds-earn-millions-why-mobile-speed-can-slow-or-grow-your-business/">
+          Google
+        </a>
+      </h3>
+    </div>
+    <div className={Style.info}>
+      <p>
+        <span className={Style.big}>SPEED</span> matters. Lots.{" "}
+        <a href="https://www.broadbandsearch.net/blog/mobile-desktop-internet-usage-statistics">
+          Over 50% of websites
+        </a>{" "}
+        are visited using mobile phones, and{" "}
+        <a href="https://www.thinkwithgoogle.com/marketing-resources/data-measurement/mobile-page-speed-new-industry-benchmarks/">
+          "the probability of a bounce increases 32%"
+        </a>{" "}
+        for a site that loads in{" "}
+        <span className={Style.yellowhigh}>3 seconds</span> versus{" "}
+        <span className={Style.yellowhigh}>1 second.</span> Speed is now also
+        important in Google search rankings, with load times being a factor. The
+        bottom line is if you want your website to rank higher, have a lower
+        bounce rate and a higher conversion rate, make it faster! Our technology
+        stack is oriented around speed.
+      </p>
     </div>
     <div className={Style.mainflex}>
       <div
@@ -96,6 +123,21 @@ const Why = () => (
           overloading and crashing your website server. With JAMstack and CDNs
           this is not a problem, and the demand will easily be met without
           lifting a finger.
+        </p>
+      </div>
+      <div
+        className={Style.flexitem}
+        data-sal="slide-up"
+        data-sal-delay="300"
+        data-sal-easing="ease"
+        data-sal-duration="500"
+      >
+        <h3>
+          <span>Speed</span>
+        </h3>
+        <p>
+          So you wanna go fast? You've come to the right place! Speed matters
+          when it comes to website loading times.
         </p>
       </div>
     </div>
