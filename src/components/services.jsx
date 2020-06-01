@@ -82,27 +82,29 @@ const Services = ({ data }) => (
   </section>
 )
 
-export default props => (
-  <StaticQuery
-    query={graphql`
-      query {
-        front: file(relativePath: { eq: "design.png" }) {
-          childImageSharp {
-            fluid(maxWidth: 900) {
-              ...GatsbyImageSharpFluid
+export default function Myservices(props) {
+  return (
+    <StaticQuery
+      query={graphql`
+        query {
+          front: file(relativePath: { eq: "design.png" }) {
+            childImageSharp {
+              fluid(maxWidth: 900) {
+                ...GatsbyImageSharpFluid
+              }
             }
           }
-        }
 
-        front2: file(relativePath: { eq: "min.jpg" }) {
-          childImageSharp {
-            fluid(maxWidth: 900) {
-              ...GatsbyImageSharpFluid
+          front2: file(relativePath: { eq: "min.jpg" }) {
+            childImageSharp {
+              fluid(maxWidth: 900) {
+                ...GatsbyImageSharpFluid
+              }
             }
           }
         }
-      }
-    `}
-    render={data => <Services data={data} {...props} />}
-  />
-)
+      `}
+      render={data => <Services data={data} {...props} />}
+    />
+  )
+}

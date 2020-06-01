@@ -1,7 +1,9 @@
 import React from "react"
 import Style from "./why.module.scss"
+import { StaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 
-const Why = () => (
+const Why = ({ data }) => (
   <section className={Style.main}>
     <div className={Style.maintitle}>
       <h2
@@ -28,18 +30,56 @@ const Why = () => (
         <a href="https://www.broadbandsearch.net/blog/mobile-desktop-internet-usage-statistics">
           Over 50% of websites
         </a>{" "}
-        are visited using mobile phones, and{" "}
+        are visited using mobile phones, and the probability of a bounce{" "}
         <a href="https://www.thinkwithgoogle.com/marketing-resources/data-measurement/mobile-page-speed-new-industry-benchmarks/">
-          "the probability of a bounce increases 32%"
+          "increases 32%"
         </a>{" "}
         for a site that loads in{" "}
         <span className={Style.yellowhigh}>3 seconds</span> versus{" "}
         <span className={Style.yellowhigh}>1 second.</span> Speed is now also
-        important in Google search rankings, with load times being a factor. The
-        bottom line is if you want your website to rank higher, have a lower
-        bounce rate and a higher conversion rate, make it faster! Our technology
-        stack is oriented around speed.
+        important in Google search rankings, with{" "}
+        <a href="https://webmasters.googleblog.com/2010/04/using-site-speed-in-web-search-ranking.html">
+          load times
+        </a>{" "}
+        being a factor. The bottom line is if you want your website to rank
+        higher, have a lower bounce rate and a higher conversion rate, make it
+        faster! Our technology stack is oriented around speed.
       </p>
+    </div>
+
+    <div className={Style.mainflex}>
+      <div className={Style.picflex2}>
+        <div
+          data-sal="slide-right"
+          data-sal-delay="300"
+          data-sal-easing="ease"
+          data-sal-duration="1000"
+          className={Style.slide}
+        >
+          {" "}
+          <div className={Style.infobox}>
+            <h3>
+              Completely custom code. We write all our own. It's slower to
+              write, but makes sites faster.
+            </h3>
+          </div>
+        </div>
+        <Img
+          style={{ overflow: `visible` }}
+          fluid={data.front2.childImageSharp.fluid}
+        />
+      </div>
+      <div className={Style.picflex}>
+        {" "}
+        <h3>
+          "A <span className={Style.yellowhigh}>one-second delay</span> in
+          mobile load times can impact conversion rates by up to{" "}
+          <span className={Style.yellowhigh}>20% </span>." -{" "}
+          <a href="https://www.thinkwithgoogle.com/intl/en-154/marketing-collections/mobile/milliseconds-earn-millions-why-mobile-speed-can-slow-or-grow-your-business/">
+            Google
+          </a>
+        </h3>
+      </div>
     </div>
     <div className={Style.mainflex}>
       <div
@@ -144,4 +184,29 @@ const Why = () => (
   </section>
 )
 
-export default Why
+export default function Mywhy(props) {
+  return (
+    <StaticQuery
+      query={graphql`
+        query {
+          front: file(relativePath: { eq: "tilt.png" }) {
+            childImageSharp {
+              fluid(maxWidth: 900) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+
+          front2: file(relativePath: { eq: "untilt.png" }) {
+            childImageSharp {
+              fluid(maxWidth: 900) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      `}
+      render={data => <Why data={data} {...props} />}
+    />
+  )
+}

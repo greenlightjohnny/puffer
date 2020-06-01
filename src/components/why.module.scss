@@ -5,7 +5,9 @@
   .yellowhigh {
     background: var(--ogfish);
     padding: 0 10px;
-    h3 {
+    color: #ffffff;
+    h3,
+    p {
       color: #ffffff;
     }
   }
@@ -47,8 +49,16 @@
   .mainflex {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
     //margin-top: 3rem;
+
+    @media screen and (max-width: 700px) {
+    }
   }
 
   .info {
@@ -64,9 +74,121 @@
     .big {
       font-weight: bold;
       font-size: 2rem;
+      color: var(--headertext);
     }
     a {
       color: var(--under);
+    }
+  }
+
+  .picflex {
+    flex: 1;
+    margin: 1rem;
+    margin-top: 3rem;
+    //position: relative;
+    z-index: 3;
+    min-width: 350px;
+
+    h3 {
+      color: var(--textcolor);
+    }
+    @media screen and (max-width: 700px) {
+      min-width: 275px;
+      margin-top: 1rem;
+    }
+
+    .infobox {
+      position: absolute;
+      top: 30%;
+      width: 100%;
+      //text-align: center;
+      z-index: 2;
+      color: var(--textcolor);
+    }
+
+    img {
+      //border-radius: 10px;
+      //filter: grayscale(0.5);
+    }
+  }
+
+  .picflex2 {
+    flex: 1;
+    margin: 1rem;
+    margin-top: 6rem;
+    position: relative;
+    margin-bottom: 5rem;
+    min-width: 350px;
+
+    @media screen and (max-width: 700px) {
+      .infobox {
+        transform: translateX(0);
+      }
+    }
+
+    .slide {
+      position: absolute;
+      top: 30%;
+      width: 100%;
+      z-index: 3;
+    }
+
+    .infobox {
+      position: absolute;
+      top: 30%;
+      width: 100%;
+      //text-align: center;
+      z-index: 3;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      overflow: visible;
+      transform: translateX(80px);
+      background-color: var(--ogfish);
+      background-blend-mode: lighten;
+      box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3),
+        0 15px 12px rgba(0, 0, 0, 0.22);
+      transform: perspective(700px) rotateY(-10deg) translateX(80px);
+
+      @media screen and (max-width: 700px) {
+        transform: translateX(0);
+        width: 90%;
+        margin-left: 10%;
+      }
+
+      // &:before {
+      //   content: "";
+      //   position: absolute;
+      //   top: 0;
+      //   left: 0;
+      //   width: 100%;
+      //   height: 100%;
+      //   opacity: 0.4;
+      //   z-index: -1;
+      // }
+
+      h3 {
+        color: #fff;
+        background-color: transparent;
+        z-index: 3;
+        margin-top: 1rem;
+        //filter: blur(10);
+      }
+    }
+
+    img {
+      //border-radius: 10px;
+      //filter: grayscale(0.5);
+      transform: perspective(400px) rotateY(20deg);
+      z-index: 2;
+      margin-left: 10%;
+      border-radius: 10px;
+      box-shadow: 0 30px 60px -10px rgba(0, 0, 0, 0.3),
+        0 18px 36px -18px rgba(0, 0, 0, 0.33);
+
+      @media screen and (max-width: 700px) {
+        margin-right: 6rem;
+        max-width: 100%;
+      }
     }
   }
 
