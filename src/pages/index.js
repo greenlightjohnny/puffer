@@ -136,7 +136,7 @@ const Main = props => (
         </h2>
         <p>
           Some of our past work we can share, hopefully we can feature yours one
-          day!
+          day! Woo
         </p>
       </div>
       <div className={Styles.caseflex}>
