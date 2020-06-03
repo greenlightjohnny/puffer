@@ -59,8 +59,8 @@ const Why = ({ data }) => (
           {" "}
           <div className={Style.infobox}>
             <h3>
-              Completely custom code. We write all our own. It's slower to
-              write, but makes sites faster.
+              Completely custom code. We use Gatsby to develop static websites
+              that load in the blink of an eye.
             </h3>
           </div>
         </div>
@@ -81,7 +81,7 @@ const Why = ({ data }) => (
         </h3>
       </div>
     </div>
-    <div className={Style.mainflex}>
+    {/* <div className={Style.mainflex}>
       <div
         className={Style.flexitem}
         data-sal="slide-up"
@@ -180,7 +180,7 @@ const Why = ({ data }) => (
           when it comes to website loading times.
         </p>
       </div>
-    </div>
+    </div> */}
   </section>
 )
 
