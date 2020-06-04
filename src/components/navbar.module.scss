@@ -14,6 +14,7 @@
 
   h3 {
     display: inline-block;
+
     padding-left: 2rem;
     padding-top: 10px;
     margin-top: 0;
@@ -56,7 +57,7 @@
 .mobilehide {
   position: absolute;
 
-  max-width: 800px;
+  //max-width: 800px;
   margin: 0 auto;
   display: flex;
   flex: 1;
@@ -71,7 +72,7 @@
 .mobile {
   position: fixed;
 
-  max-width: 800px;
+  //max-width: 800px;
   margin: 0 auto;
   display: flex;
   flex: 1;
@@ -276,11 +277,18 @@
   padding: 0 4px;
   display: flex;
   align-items: center;
+  transform: rotate(90deg);
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .darktoggle {
+  position: fixed;
+  top: 0px;
+  left: -20px;
   display: flex;
   margin: 0 auto;
+  flex-direction: column;
   margin-left: 20px;
 
   & > button {

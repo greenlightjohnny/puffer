@@ -5,13 +5,14 @@ import Img from "gatsby-image"
 
 const Why = ({ data }) => (
   <section className={Style.main}>
-    <div className={Style.maintitle}>
-      <h2
-        data-sal="slide-left"
-        data-sal-delay="300"
-        data-sal-easing="ease"
-        data-sal-duration="700"
-      >
+    <div
+      data-sal="slide-left"
+      data-sal-delay="300"
+      data-sal-easing="ease"
+      data-sal-duration="700"
+      className={Style.maintitle}
+    >
+      <h2>
         The<br></br>
         <span className={Style.under}>Technology</span>
       </h2>
@@ -24,7 +25,13 @@ const Why = ({ data }) => (
         </a>
       </h3>
     </div>
-    <div className={Style.info}>
+    <div
+      data-sal="zoom-in"
+      data-sal-delay="300"
+      data-sal-easing="ease"
+      data-sal-duration="700"
+      className={Style.info}
+    >
       <p>
         <span className={Style.big}>SPEED</span> matters. Lots.{" "}
         <a href="https://www.broadbandsearch.net/blog/mobile-desktop-internet-usage-statistics">
@@ -48,10 +55,16 @@ const Why = ({ data }) => (
     </div>
 
     <div className={Style.mainflex}>
-      <div className={Style.picflex2}>
+      <div
+        data-sal="zoom-in"
+        data-sal-delay="300"
+        data-sal-easing="ease"
+        data-sal-duration="1000"
+        className={Style.picflex2}
+      >
         <div
           data-sal="slide-right"
-          data-sal-delay="300"
+          data-sal-delay="900"
           data-sal-easing="ease"
           data-sal-duration="1000"
           className={Style.slide}
@@ -69,16 +82,24 @@ const Why = ({ data }) => (
           fluid={data.front2.childImageSharp.fluid}
         />
       </div>
-      <div className={Style.picflex}>
+      <div
+        data-sal="zoom-in"
+        data-sal-delay="300"
+        data-sal-easing="ease"
+        data-sal-duration="1000"
+        className={Style.picflex}
+      >
         {" "}
-        <h3>
-          "A <span className={Style.yellowhigh}>one-second delay</span> in
-          mobile load times can impact conversion rates by up to{" "}
-          <span className={Style.yellowhigh}>20% </span>." -{" "}
-          <a href="https://www.thinkwithgoogle.com/intl/en-154/marketing-collections/mobile/milliseconds-earn-millions-why-mobile-speed-can-slow-or-grow-your-business/">
-            Google
-          </a>
-        </h3>
+        <p>
+          <span className={Style.big}>Gatsby</span> built sites load faster than
+          WordPress. As if that was not enough, they are more secure, rank
+          higher, and have better SEO out of the box.
+          <span className={Style.yellowhigh}>20% </span>. -{" "}
+        </p>
+        <p className={Style.p2}>
+          <span className={Style.big}>JAMstack.</span> We follow the JAMstack
+          philosophy for most of our work.
+        </p>
       </div>
     </div>
     {/* <div className={Style.mainflex}>

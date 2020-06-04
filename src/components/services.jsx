@@ -1,6 +1,6 @@
 import React from "react"
 import Styles from "./services.module.scss"
-import { StaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import Pics from "../images/design.png"
 import Des from "../images/des.png"
@@ -8,13 +8,14 @@ import Des2 from "../images/des2.png"
 
 const Services = ({ data }) => (
   <section id="services" className={Styles.main}>
-    <div className={Styles.maintitle}>
-      <h2
-        data-sal="slide-left"
-        data-sal-delay="300"
-        data-sal-easing="ease"
-        data-sal-duration="400"
-      >
+    <div
+      data-sal="slide-left"
+      data-sal-delay="300"
+      data-sal-easing="ease"
+      data-sal-duration="400"
+      className={Styles.maintitle}
+    >
+      <h2>
         {" "}
         <span className={Styles.under}>Services</span>
       </h2>
@@ -78,6 +79,30 @@ const Services = ({ data }) => (
           </div>
         </div>
       </a>
+    </div>
+    <div className={Styles.callus}>
+      <p>
+        <span className={Styles.big}>Questions?</span> Feel free to ask us
+        anything! We are always happy to answer any questions.
+        <span className={Styles.yellowhigh}> </span>. -{" "}
+      </p>
+      <Link className={Styles.button1} to="#contact">
+        Contact{" "}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 20 19"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </Link>
     </div>
   </section>
 )

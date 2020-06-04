@@ -5,13 +5,14 @@ import Img from "gatsby-image"
 import Styles from "./about.module.scss"
 const About = ({ data }) => (
   <section id="about" className={Styles.intro}>
-    <div className={Styles.top}>
-      <h2
-        data-sal="slide-left"
-        data-sal-delay="300"
-        data-sal-easing="ease"
-        data-sal-duration="1000"
-      >
+    <div
+      data-sal="slide-left"
+      data-sal-delay="300"
+      data-sal-easing="ease"
+      data-sal-duration="1000"
+      className={Styles.top}
+    >
+      <h2>
         {" "}
         <span className={Styles.under}>About</span>
       </h2>
@@ -62,33 +63,43 @@ const About = ({ data }) => (
           times and easy to navigate designs.
         </p>
       </div>
-      <div className={Styles.right}>
+
+      <div
+        data-sal="zoom-in"
+        data-sal-delay="400"
+        data-sal-easing="ease-in"
+        data-sal-duration="1000"
+        className={Styles.right}
+      >
         <h2>Why Pick Us?</h2>
-        <ul>
-          <li>
-            <span className={Styles.big}>Quality</span> Work. Our sites look
-            good AND perform amazing.
-          </li>
-          <li>
-            <span className={Styles.big}>Lower</span> Costs. How? We got rid of
-            our office and have 0 management overhead.
-          </li>
-          <li>
-            <span className={Styles.big}>Personal</span> Relationships. We're
-            not some massive company.
-          </li>
-          <li>
-            <span className={Styles.big}>Modern</span> Technology.
-          </li>
-          <li>
-            <span className={Styles.big}>Happy</span> People. Everyone is
-            passionate about our work, it's more than a job.
-          </li>
-          <li>
-            <span className={Styles.big}>Gatsby.</span> We create static sites
-            with Gatsby. They blow WorPress sites out of the water.
-          </li>
-        </ul>
+
+        <div className={Styles.slideagain}>
+          <ul>
+            <li>
+              <span className={Styles.big}>Quality</span> Work. Our sites look
+              good AND perform amazing.
+            </li>
+            <li>
+              <span className={Styles.big}>Lower</span> Costs. How? We got rid
+              of our office and have 0 management overhead.
+            </li>
+            <li>
+              <span className={Styles.big}>Personal</span> Relationships. We're
+              not some massive company.
+            </li>
+            <li>
+              <span className={Styles.big}>Modern</span> Technology.
+            </li>
+            <li>
+              <span className={Styles.big}>Happy</span> People. Everyone is
+              passionate about our work, it's more than a job.
+            </li>
+            <li>
+              <span className={Styles.big}>Gatsby.</span> We create static sites
+              with Gatsby. They blow WorPress sites out of the water.
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
