@@ -180,38 +180,6 @@ export const query = graphql`
         }
       }
     }
-
-    front2: file(relativePath: { eq: "design.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 300, maxHeight: 300) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-
-    front3: file(relativePath: { eq: "min2.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 300, maxHeight: 300) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-
-    front4: file(relativePath: { eq: "face2.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 900) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-
-    front5: file(relativePath: { eq: "her2.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 900) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
   }
 `
 export default Main

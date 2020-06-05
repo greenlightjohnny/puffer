@@ -115,6 +115,22 @@
       width: 100%;
     }
 
+    .imgtext {
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+      background-color: rgba(30, 174, 219, 0.7);
+      padding-left: 10px;
+      padding-right: 10px;
+
+      h4 {
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        font-size: 3rem;
+        letter-spacing: -20px;
+      }
+    }
+
     .gatsby-image-wrapper {
       position: relative;
       overflow: hidden;

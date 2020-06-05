@@ -80,7 +80,13 @@ const Services = ({ data }) => (
         </div>
       </a>
     </div>
-    <div className={Styles.callus}>
+    <div
+      data-sal="zoom-in"
+      data-sal-delay="300"
+      data-sal-easing="ease"
+      data-sal-duration="1000"
+      className={Styles.callus}
+    >
       <p>
         <span className={Styles.big}>Questions?</span> Feel free to ask us
         anything! We are always happy to answer any questions.

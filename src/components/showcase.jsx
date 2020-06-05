@@ -90,6 +90,9 @@ const Showcase = ({ data }) => (
             style={{ height: `600px`, width: `500px` }}
             fluid={data.front.childImageSharp.fluid}
           />
+          <div className={Styles.imgtext}>
+            <h4>Name</h4>
+          </div>
         </div>
       </div>
       <div>
@@ -100,6 +103,9 @@ const Showcase = ({ data }) => (
             style={{ height: `600px`, width: `500px` }}
             fluid={data.front2.childImageSharp.fluid}
           />
+          <div className={Styles.imgtext}>
+            <h4>Name</h4>
+          </div>
         </div>
       </div>
       <div>
@@ -110,6 +116,9 @@ const Showcase = ({ data }) => (
             style={{ height: `600px`, width: `500px` }}
             fluid={data.front3.childImageSharp.fluid}
           />
+          <div className={Styles.imgtext}>
+            <h4>Name</h4>
+          </div>
         </div>
       </div>
     </div>
