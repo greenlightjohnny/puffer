@@ -42,9 +42,9 @@ const Main = props => (
                 viewBox="0 0 20 19"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
                 <line x1="5" y1="12" x2="19" y2="12"></line>
                 <polyline points="12 5 19 12 12 19"></polyline>
@@ -155,9 +155,9 @@ const Main = props => (
           <svg
             stroke="currentColor"
             fill="red"
-            stroke-width="0"
+            strokeWidth="0"
             viewBox="0 0 512 512"
-            class="footer__StyledHeart-vlykoa-4 hTUIdA"
+            className="footer__StyledHeart-vlykoa-4 hTUIdA"
             height="1em"
             width="1em"
           >

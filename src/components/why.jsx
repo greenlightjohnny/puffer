@@ -203,8 +203,18 @@ const Why = ({ data }) => (
       </div>
     </div> */}
     <div className={Style.hello}>
-      <div>
-        <h2>Speed is money</h2>
+      <div className={Style.blueb}>
+        <h2>
+          <span className={Style.yellowhigh}>Faster </span>load times means more
+          revenue
+        </h2>
+        <p>
+          <span className={Style.big}>Load</span>site loads the more money you
+          can make. How much more? It depends. Google has a site speed
+          calculator you can test your current site at and site at and plug in
+          lower numbers to see how much your visitor bounce rate and conversion
+          rates change.{" "}
+        </p>
       </div>
       <div className={Style.phon2}>
         {" "}
@@ -212,6 +222,9 @@ const Why = ({ data }) => (
           style={{ overflow: `visible` }}
           fluid={data.front3.childImageSharp.fluid}
         />
+        <div className={Style.infobox2}>
+          <p>Official Google numbers</p>
+        </div>
       </div>
     </div>
   </section>

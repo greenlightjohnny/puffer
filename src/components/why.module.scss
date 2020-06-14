@@ -299,7 +299,12 @@
   margin: 0 auto;
   padding-left: 2rem;
   padding-right: 2rem;
-  justify-content: center;
+  justify-content: space-between;
+  margin-top: 3rem;
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
+    //align-items: center;
+  }
 
   > * {
     max-width: 500px;
@@ -308,6 +313,13 @@
   }
   .phon2 {
     max-width: 300px;
+    position: relative;
+    //margin: 0 auto;
+    @media screen and (max-width: 700px) {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
     img {
       transform: perspective(1000px) rotateY(-20deg);
       z-index: 2;
@@ -317,6 +329,62 @@
       box-shadow: 9px 36px 26px -10px rgba(0, 0, 0, 0.54);
       // box-shadow: 0 30px 60px -10px rgba(0, 0, 0, 0.3),
       //   0 18px 36px -18px rgba(0, 0, 0, 0.33);
+    }
+  }
+}
+
+.blueb {
+  //background-color: var(--bluet);
+  padding: 1rem;
+  border-radius: 30px;
+  //background-blend-mode: lighten;
+  @media screen and (max-width: 700px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h2 {
+    margin-top: 0.5rem;
+    font-size: 2rem;
+    color: var(--headertext);
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+}
+
+.infobox2 {
+  position: absolute;
+  bottom: 50px;
+  background-color: var(--bluet);
+  //background-blend-mode: lighten;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  transform: perspective(700px) rotateY(10deg) translateX(-270px);
+  border-radius: 10px;
+  padding: 1rem;
+  padding-bottom: 0.4rem;
+  z-index: 2;
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (max-width: 700px) {
+    transform: perspective(900px) rotateY(20deg) translateX(0)
+      translateY(-460px);
+    width: 110%;
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  p {
+    color: var(--headertext);
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    @media screen and (max-width: 700px) {
+      font-size: 1.1rem;
+      color: #fff;
     }
   }
 }

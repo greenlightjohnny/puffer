@@ -81,7 +81,7 @@ const Showcase = ({ data }) => (
       </div>
     </div>
 
-    <div className={Styles.flexcon}>
+    {/* <div className={Styles.flexcon}>
       <div>
         <div className={Styles.box}>
           {" "}
@@ -121,7 +121,7 @@ const Showcase = ({ data }) => (
           </div>
         </div>
       </div>
-    </div>
+    </div> */}
   </section>
 )
 
