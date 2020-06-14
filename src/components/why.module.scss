@@ -292,3 +292,31 @@
     )
     no-repeat 1px 35px;
 }
+
+.hello {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  justify-content: center;
+
+  > * {
+    max-width: 500px;
+    flex: 1;
+    max-height: 800px;
+  }
+  .phon2 {
+    max-width: 300px;
+    img {
+      transform: perspective(1000px) rotateY(-20deg);
+      z-index: 2;
+      border-radius: 45px;
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 55px;
+      box-shadow: 9px 36px 26px -10px rgba(0, 0, 0, 0.54);
+      // box-shadow: 0 30px 60px -10px rgba(0, 0, 0, 0.3),
+      //   0 18px 36px -18px rgba(0, 0, 0, 0.33);
+    }
+  }
+}

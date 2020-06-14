@@ -1,6 +1,6 @@
 import React from "react"
 import Style from "./why.module.scss"
-import { StaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
 const Why = ({ data }) => (
@@ -202,6 +202,18 @@ const Why = ({ data }) => (
         </p>
       </div>
     </div> */}
+    <div className={Style.hello}>
+      <div>
+        <h2>Speed is money</h2>
+      </div>
+      <div className={Style.phon2}>
+        {" "}
+        <Img
+          style={{ overflow: `visible` }}
+          fluid={data.front3.childImageSharp.fluid}
+        />
+      </div>
+    </div>
   </section>
 )
 
@@ -219,6 +231,14 @@ export default function Mywhy(props) {
           }
 
           front2: file(relativePath: { eq: "untilt.png" }) {
+            childImageSharp {
+              fluid(maxWidth: 900) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+
+          front3: file(relativePath: { eq: "finali.png" }) {
             childImageSharp {
               fluid(maxWidth: 900) {
                 ...GatsbyImageSharpFluid
