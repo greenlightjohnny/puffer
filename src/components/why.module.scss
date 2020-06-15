@@ -2,6 +2,7 @@
   background-color: var(--back);
   padding-bottom: 3rem;
   transition: background-color ease-in-out 1.3s, color ease-in-out 1.3s;
+  //lposition: relative;
 
   .yellowhigh {
     background: var(--ogfish);
@@ -295,6 +296,7 @@
 
 .hello {
   display: flex;
+  position: relative;
   max-width: 1200px;
   margin: 0 auto;
   padding-left: 2rem;
@@ -337,6 +339,8 @@
   //background-color: var(--bluet);
   padding: 1rem;
   border-radius: 30px;
+  position: relative;
+  z-index: 2;
   //background-blend-mode: lighten;
   @media screen and (max-width: 700px) {
     margin-left: auto;
@@ -350,6 +354,7 @@
   }
 
   p {
+    //display: inline-block;
     font-size: 1.3rem;
   }
 }
@@ -387,4 +392,35 @@
       color: #fff;
     }
   }
+}
+
+// .blob {
+//   position: absolute;
+//   //left: 10%;
+//   width: 900px;
+//   height: auto;
+//   bottom: -300px;
+//   left: -500px;
+//   //opacity: 0.9;
+//   //z-index: 1;
+//   color: rgba(91, 209, 245, 0.5);
+//   //z-index: -2;
+//   background-image: url("data:image/svg+xml,%3Csvg view-box='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%0A%3E%3Cpath fill='currentColor' d='M42.5,-51C55.8,-39.5,67.8,-26.8,67.7,-13.9C67.7,-1,55.5,12,45.2,22.6C35,33.2,26.5,41.4,14.8,49.5C3.1,57.6,-11.9,65.7,-25,63.3C-38.2,60.9,-49.5,48,-45.2,35.7C-40.9,23.4,-20.9,11.6,-13.1,3C-5.3,-5.7,-9.7,-11.2,-9.5,-25C-9.3,-38.8,-4.7,-60.9,5,-66.8C14.6,-72.7,29.2,-62.5,42.5,-51Z' transform='translate(100 100)' /%3E%3C/svg%3E");
+// }
+
+.blueb:after {
+  content: "";
+  position: absolute;
+  //left: 10%;
+  width: 900px;
+  height: 900px;
+  bottom: -300px;
+  left: -500px;
+  //opacity: 0.9;
+  //z-index: -2;
+  //opacity: 0.9;
+  //color: rgba(91, 209, 245, 0.5);
+  z-index: -1;
+  opacity: 0.5;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%235BD1F5' fillOpacity='.5' d='M42.5,-51C55.8,-39.5,67.8,-26.8,67.7,-13.9C67.7,-1,55.5,12,45.2,22.6C35,33.2,26.5,41.4,14.8,49.5C3.1,57.6,-11.9,65.7,-25,63.3C-38.2,60.9,-49.5,48,-45.2,35.7C-40.9,23.4,-20.9,11.6,-13.1,3C-5.3,-5.7,-9.7,-11.2,-9.5,-25C-9.3,-38.8,-4.7,-60.9,5,-66.8C14.6,-72.7,29.2,-62.5,42.5,-51Z' transform='translate(100 100)' /%3E%3C/svg%3E");
 }

@@ -215,6 +215,18 @@ const Why = ({ data }) => (
           lower numbers to see how much your visitor bounce rate and conversion
           rates change.{" "}
         </p>
+
+        {/* <svg
+          className={Style.blob}
+          viewBox="0 0 200 200"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill="currentColor"
+            d="M42.5,-51C55.8,-39.5,67.8,-26.8,67.7,-13.9C67.7,-1,55.5,12,45.2,22.6C35,33.2,26.5,41.4,14.8,49.5C3.1,57.6,-11.9,65.7,-25,63.3C-38.2,60.9,-49.5,48,-45.2,35.7C-40.9,23.4,-20.9,11.6,-13.1,3C-5.3,-5.7,-9.7,-11.2,-9.5,-25C-9.3,-38.8,-4.7,-60.9,5,-66.8C14.6,-72.7,29.2,-62.5,42.5,-51Z"
+            transform="translate(100 100)"
+          />
+        </svg> */}
       </div>
       <div className={Style.phon2}>
         {" "}
@@ -223,7 +235,7 @@ const Why = ({ data }) => (
           fluid={data.front3.childImageSharp.fluid}
         />
         <div className={Style.infobox2}>
-          <p>Official Google numbers</p>
+          <p>Official Google report</p>
         </div>
       </div>
     </div>

@@ -60,12 +60,13 @@ div[role="group"][tabindex] {
   --gra: #40c4fb;
   --gra2: transparent;
   --dark2: #fff;
-
+  --dim: rgb(246, 252, 255);
   --bluet: rgba(30, 174, 219, 0.7);
   transition: all 2s ease;
 }
 .dark-mode {
   --light1: black;
+  --dim: rgb(34, 33, 33);
   background-color: #1a1919;
   --cards: #000;
   color: #999;
