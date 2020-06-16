@@ -94,7 +94,7 @@ const Why = ({ data }) => (
           <span className={Style.big}>Gatsby</span> built sites load faster than
           WordPress. As if that was not enough, they are more secure, rank
           higher, and have better SEO out of the box.
-          <span className={Style.yellowhigh}>20% </span>. -{" "}
+          <span className={Style.yellowhigh}></span>.
         </p>
         <p className={Style.p2}>
           <span className={Style.big}>JAMstack.</span> We follow the JAMstack
@@ -209,11 +209,11 @@ const Why = ({ data }) => (
           revenue
         </h2>
         <p>
-          <span className={Style.big}>Load</span>site loads the more money you
-          can make. How much more? It depends. Google has a site speed
-          calculator you can test your current site at and site at and plug in
-          lower numbers to see how much your visitor bounce rate and conversion
-          rates change.{" "}
+          <span className={Style.big}>Lower</span> load times means a lower
+          bounce rate and higher conversion rate. Don't believe us? Google hase
+          created a site speed calculator you can test your current site at.
+          Plug in your current website at and see it's current speed versus
+          conversions rate for a faster load times. Visit it here.{" "}
         </p>
 
         {/* <svg
