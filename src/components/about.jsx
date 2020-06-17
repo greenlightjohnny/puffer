@@ -39,7 +39,7 @@ const About = ({ data }) => (
         >
           Typically we only take on one
           <span className={Styles.out}> new client</span> at a time, allowing us
-          to focus all our creative energy and coding into single project.
+          to focus all our creative energy and coding into a single project.
           Depending on the project scope and size we will bring in{" "}
           <span className={Styles.out}> outside help </span>
           as needed.
@@ -51,9 +51,9 @@ const About = ({ data }) => (
           data-sal-easing="ease-in"
           data-sal-duration="1000"
         >
-          Our goal to create a unique, fast, and user friendly websites. For
-          this we use <span className={Styles.out}>Gatsby</span>, instead of the
-          more common WordPress. Gatsby sites load much{" "}
+          Our goal to create unique, fast, and user-friendly websites. For this
+          we use <span className={Styles.out}>Gatsby</span>, instead of the more
+          common WordPress. Gatsby sites load much{" "}
           <span className={Styles.out}>faster</span>, have{" "}
           <span className={Styles.out}> better SEO</span>, are{" "}
           <span className={Styles.out}> more secure</span>, and as a result
@@ -96,7 +96,7 @@ const About = ({ data }) => (
             </li>
             <li>
               <span className={Styles.big}>Gatsby.</span> We create static sites
-              with Gatsby. They blow WorPress sites out of the water.
+              with Gatsby.
             </li>
           </ul>
         </div>

@@ -94,12 +94,11 @@ const Why = ({ data }) => (
           <span className={Style.big}>Gatsby</span> built sites load faster than
           WordPress. As if that was not enough, they are more secure, rank
           higher, and have better SEO out of the box.
-          <span className={Style.yellowhigh}></span>.
         </p>
-        <p className={Style.p2}>
+        {/* <p className={Style.p2}>
           <span className={Style.big}>JAMstack.</span> We follow the JAMstack
           philosophy for most of our work.
-        </p>
+        </p> */}
       </div>
     </div>
     {/* <div className={Style.mainflex}>
@@ -203,7 +202,13 @@ const Why = ({ data }) => (
       </div>
     </div> */}
     <div className={Style.hello}>
-      <div className={Style.blueb}>
+      <div
+        data-sal="slide-right"
+        data-sal-delay="300"
+        data-sal-easing="ease"
+        data-sal-duration="700"
+        className={Style.blueb}
+      >
         <h2>
           <span className={Style.yellowhigh}>Faster </span>load times means more
           revenue
@@ -213,7 +218,10 @@ const Why = ({ data }) => (
           bounce rate and higher conversion rate. Don't believe us? Google hase
           created a site speed calculator you can test your current site at.
           Plug in your current website at and see it's current speed versus
-          conversions rate for a faster load times. Visit it here.{" "}
+          conversions rate for a faster load times. Visit it{" "}
+          <a href="https://www.thinkwithgoogle.com/feature/testmysite/">
+            HERE.
+          </a>{" "}
         </p>
 
         {/* <svg
@@ -228,7 +236,14 @@ const Why = ({ data }) => (
           />
         </svg> */}
       </div>
-      <div className={Style.phon2}>
+      <div
+        data-sal="zoom-in"
+        data-sal-delay="300"
+        data-sal-easing="ease"
+        data-sal-duration="1000"
+        className={Style.picflex2}
+        className={Style.phon2}
+      >
         {" "}
         <Img
           style={{ overflow: `visible` }}

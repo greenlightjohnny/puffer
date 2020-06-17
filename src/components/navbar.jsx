@@ -53,9 +53,7 @@ function Navbar() {
           <li onClick={() => setNavnames(!navnames)}>
             <Link to="#services">Services</Link>
           </li>
-          <li onClick={() => setNavnames(!navnames)}>
-            <Link to="#process">Process</Link>
-          </li>
+
           <li onClick={() => setNavnames(!navnames)}>
             <Link to="#showcase">Showcase</Link>
           </li>

@@ -277,18 +277,18 @@
   padding: 0 4px;
   display: flex;
   align-items: center;
-  transform: rotate(90deg);
+  //transform: rotate(90deg);
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 .darktoggle {
-  position: fixed;
-  top: 0px;
-  left: -20px;
+  // position: fixed;
+  // top: 0px;
+  // left: -20px;
   display: flex;
-  margin: 0 auto;
-  flex-direction: column;
+  // margin: 0 auto;
+  //flex-direction: column;
   margin-left: 20px;
 
   & > button {

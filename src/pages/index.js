@@ -63,7 +63,6 @@ const Main = props => (
     <Services />
     <Why />
     <Aboutus />
-    <Showcase />
 
     <section id="contact" className={Styles.contact}>
       <div className={Styles.contactflex}>

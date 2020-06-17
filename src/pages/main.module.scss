@@ -379,7 +379,7 @@
   background-color: var(--dim);
   padding-top: 3rem;
   //padding-bottom: 3rem;
-  margin-bottom: 300px;
+  //margin-bottom: 300px;
   h2,
   h1 {
     color: var(--headertext);
@@ -417,15 +417,15 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 .footer {
   background-color: #1eaedb;
-  position: fixed;
-  bottom: 0;
-  height: 300px;
-  width: 100%;
-  z-index: -1;
+  // position: fixed;
+  // bottom: 0;
+  // height: 300px;
+  // width: 100%;
+  // z-index: -1;
 
   .waves {
     padding-bottom: 0;
-    background-color: var(--lightb);
+    background-color: var(--dim);
     margin-bottom: 0;
     position: relative;
     top: 0rem;

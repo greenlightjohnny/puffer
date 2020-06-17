@@ -55,7 +55,7 @@ const Services = ({ data }) => (
             <h3>Design</h3>
             <p>
               We take a mobile first design approach with unique styling.
-              Responsive, eye catching, and{" "}
+              Responsive, eye catching, and totally custom CSS{" "}
             </p>
           </div>
         </div>
@@ -74,7 +74,7 @@ const Services = ({ data }) => (
             <h3>SEO</h3>
             <p>
               Need a comprehensive review of your online presence? We are here
-              to help! Social media, SEO, marketing, and branding we do it all.{" "}
+              to help! Social media, SEO, marketing, and branding, we do it all.{" "}
             </p>
           </div>
         </div>

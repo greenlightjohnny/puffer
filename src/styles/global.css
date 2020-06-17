@@ -37,6 +37,7 @@ div[role="group"][tabindex] {
 }
 
 .light-mode {
+  --test: #5bd1f5;
   background-color: #fff;
   color: #333;
   --light1: #fff;
