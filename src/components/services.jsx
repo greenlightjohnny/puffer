@@ -55,7 +55,7 @@ const Services = ({ data }) => (
             <h3>Design</h3>
             <p>
               We take a mobile first design approach with unique styling.
-              Responsive, eye catching, and totally custom CSS{" "}
+              Responsive, eye catching, and totally custom CSS.{" "}
             </p>
           </div>
         </div>
@@ -90,7 +90,6 @@ const Services = ({ data }) => (
       <p>
         <span className={Styles.big}>Questions?</span> Feel free to ask us
         anything! We are always happy to answer any questions.
-        <span className={Styles.yellowhigh}> </span>. -{" "}
       </p>
       <Link className={Styles.button1} to="#contact">
         Contact{" "}

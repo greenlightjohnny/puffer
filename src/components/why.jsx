@@ -4,7 +4,7 @@ import { StaticQuery, graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
 const Why = ({ data }) => (
-  <section className={Style.main}>
+  <section id="why" className={Style.main}>
     <div
       data-sal="slide-left"
       data-sal-delay="300"

@@ -47,15 +47,15 @@ function Navbar() {
           <li onClick={() => setNavnames(false)}>
             <Link to="#home">Home</Link>
           </li>
-          <li onClick={() => setNavnames(!navnames)}>
-            <Link to="/#about">About</Link>
-          </li>
+
           <li onClick={() => setNavnames(!navnames)}>
             <Link to="#services">Services</Link>
           </li>
-
           <li onClick={() => setNavnames(!navnames)}>
-            <Link to="#showcase">Showcase</Link>
+            <Link to="#why">Technology</Link>
+          </li>
+          <li onClick={() => setNavnames(!navnames)}>
+            <Link to="/#about">About</Link>
           </li>
           <li onClick={() => setNavnames(!navnames)}>
             <Link to="#contact">Contact</Link>
