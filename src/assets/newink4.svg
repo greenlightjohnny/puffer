@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="206mm" height="200mm" version="1.1" viewBox="0 0 206 200" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <defs>
+  <filter id="filter1025" x="-.02" y="-.021948" width="1.0423" height="1.0439" color-interpolation-filters="sRGB">
+   <feGaussianBlur result="result6" stdDeviation="1.7637994"/>
+   <feComposite in="SourceGraphic" in2="result6" operator="atop" result="result8"/>
+   <feComposite in="result8" in2="SourceAlpha" result="result9"/>
+   <feColorMatrix result="result10" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 "/>
+   <feBlend in="result10" in2="result6"/>
+  </filter>
+  <style><![CDATA[
+.class1 {
+  fill:none;
+  filter:url(#filter1025);
+  stroke:#e50a0a;
+  stroke-dasharray:none;
+  stroke-miterlimit:4;
+  stroke-opacity:1;
+  stroke-width:0.865;
+}
+]]></style>
+  <filter id="filter1234" x="-.026515" y="-.027503" width="1.053" height="1.055" color-interpolation-filters="sRGB">
+   <feGaussianBlur stdDeviation="2.2101518"/>
+  </filter>
+  <filter id="filter1380" x="-.0381" y="-.039693" width="1.0762" height="1.0794" color-interpolation-filters="sRGB">
+   <feGaussianBlur stdDeviation="2.4925884"/>
+  </filter>
+ </defs>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g fill="none">
+  <path d="m100.08 4.2589 33.554 61.323 69.539 7.1238-47.953 50.862 14.714 68.337-63.191-29.889-60.446 35.111 8.8989-69.334-52.071-46.637 68.691-12.962z" filter="url(#filter1234)" opacity=".94" stroke="#e50a0a" stroke-width="2.465"/>
+  <path d="m100.08 4.2589 33.554 61.323 69.539 7.1238-47.953 50.862 14.714 68.337-63.191-29.889-60.446 35.111 8.8989-69.334-52.071-46.637 68.691-12.962z" stroke="#e50a0a" stroke-width=".865"/>
+  <path d="m25.813 86.623 54.022-9.4301 22.858-49.848 25.662 48.464 54.472 6.335-38.162 39.382 10.808 53.763-49.248-24.124-47.792 26.893 7.7252-54.292z" filter="url(#filter1380)" opacity=".94" stroke="#1401f4" stroke-width="4.265"/>
+  <path d="m25.813 86.623 54.022-9.4301 22.858-49.848 25.662 48.464 54.472 6.335-38.162 39.382 10.808 53.763-49.248-24.124-47.792 26.893 7.7252-54.292z" opacity=".94" stroke="#1401f4" stroke-width="2.465"/>
+ </g>
+</svg>

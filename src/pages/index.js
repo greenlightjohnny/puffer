@@ -1,13 +1,11 @@
 import React from "react"
 import Styles from "./main.module.scss"
-import Fish from "../images/blowfish.svg"
-import Navbar from "../components/navbar"
 
+import Navbar from "../components/navbar"
+import Star from "../assets/newink4.svg"
 import Form from "../components/form"
 import Img from "gatsby-image"
-import Rtool from "../images/react.svg"
-import Gtool from "../images/gatsby.svg"
-import Qtool from "../images/graphql.svg"
+
 import { graphql, Link } from "gatsby"
 import Processes from "../components/newprocess"
 import Services from "../components/services"
@@ -17,13 +15,17 @@ import Showcase from "../components/showcase"
 
 const Main = props => (
   <div>
-    <section id="home" className={Styles.landing}>
+    <section
+      id="home"
+      // style={{ backgroundImage: `url(${bg})` }}
+      className={Styles.landing}
+    >
       <Navbar />
       <div className={Styles.landingflex}>
         <div className={Styles.title}>
           {" "}
           <h1>
-            Puffer<span className={Styles.spantitle}>Fish</span> Labs
+            Star<span className={Styles.spantitle}>City</span> Creative
           </h1>
           <p>
             <span className={Styles.high}>Custom </span>website development.{" "}
@@ -53,10 +55,11 @@ const Main = props => (
           </p>
         </div>
         <div className={Styles.fish}>
-          <img src={Fish} alt="Cute blowfish cartoon"></img>
-          <div className={Styles.bubbles}>
+          {/* <img src={Star} alt="Cute blowfish cartoon"></img> */}
+          <Star />
+          {/* <div className={Styles.bubbles}>
             <div className={Styles.bubble}></div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

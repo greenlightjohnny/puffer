@@ -26,7 +26,7 @@ const About = ({ data }) => (
           data-sal-easing="ease-in"
           data-sal-duration="1000"
         >
-          Puffer Fish Labs, a fully remote company with people sprinkled
+          Star City Creative, a fully remote company with people sprinkled
           throughout the US. The majority have ended up in the Roanoke and
           Blacksburg, VA region. We work with clients around the world to create
           unique websites.{" "}

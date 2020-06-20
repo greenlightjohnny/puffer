@@ -4,6 +4,7 @@
 // }
 
 ///////
+
 .bolder {
   color: gb(18, 18, 18);
 }
@@ -46,6 +47,10 @@
   padding-bottom: 3rem;
   //margin-bottom: 3rem;
   height: 100vh;
+  background-image: url("../../static/hero.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   //background-attachment: fixed;
   //background-color: black;
@@ -66,10 +71,30 @@
       position: relative;
       padding-bottom: 3rem;
       padding-right: 2rem;
+      max-width: 500px;
 
-      img {
-        transform: scale(0.1);
-        animation: puff 4s ease-in-out 0.5s 1 normal forwards running;
+      svg {
+        //transform: scale(0.1);
+        width: 100%;
+        height: 100%;
+
+        g > path:nth-last-of-type(n + 3) {
+          stroke-dashoffset: 800;
+          stroke-dasharray: 800;
+          height: 100%;
+          width: 100%;
+          fill: none;
+          animation: starlines 3s ease-in-out 0.5s 1 normal forwards running;
+        }
+
+        g > path:nth-last-of-type(-n + 2) {
+          stroke-dashoffset: 800;
+          stroke-dasharray: 800;
+          height: 100%;
+          width: 100%;
+          fill: none;
+          animation: starlines 3.4s ease-in-out 0.8s 1 normal forwards running;
+        }
       }
     }
 
@@ -205,6 +230,18 @@
 
   100% {
     transform: scale(1);
+  }
+}
+
+@keyframes starlines {
+  0% {
+    stroke-dashoffset: 700;
+    stroke-dasharray: 700;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 700;
   }
 }
 

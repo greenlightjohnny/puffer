@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="206mm" height="200mm" version="1.1" viewBox="0 0 206 200" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <defs>
+  <filter id="filter1025" x="-.02" y="-.021948" width="1.0423" height="1.0439" color-interpolation-filters="sRGB">
+   <feGaussianBlur result="result6" stdDeviation="1.7637994"/>
+   <feComposite in="SourceGraphic" in2="result6" operator="atop" result="result8"/>
+   <feComposite in="result8" in2="SourceAlpha" result="result9"/>
+   <feColorMatrix result="result10" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 "/>
+   <feBlend in="result10" in2="result6"/>
+  </filter>
+ 
+  <filter id="filter1234" x="-.026515" y="-.027503" width="1.053" height="1.055" color-interpolation-filters="sRGB">
+   <feGaussianBlur stdDeviation="2.2101518"/>
+  </filter>
+ </defs>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g stroke="#e50a0a">
+  <path d="m100.08 4.2589 33.554 61.323 69.539 7.1238-47.953 50.862 14.714 68.337-63.191-29.889-60.446 35.111 8.8989-69.334-52.071-46.637 68.691-12.962z" filter="url(#filter1234)" opacity=".94" stroke-width="2.465"/>
+  <path d="m100.08 4.2589 33.554 61.323 69.539 7.1238-47.953 50.862 14.714 68.337-63.191-29.889-60.446 35.111 8.8989-69.334-52.071-46.637 68.691-12.962z" stroke-width=".865"/>
+ </g>
+</svg>

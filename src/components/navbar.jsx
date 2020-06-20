@@ -34,7 +34,7 @@ function Navbar() {
     <div className={Style.container}>
       <h3>
         <Navlink to="/">
-          Puffer<span className={Style.spantitle}>Fish</span>
+          Star<span className={Style.spantitle}>City</span>
         </Navlink>
       </h3>
       <Darkmodetoggle />
