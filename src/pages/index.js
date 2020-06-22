@@ -57,6 +57,7 @@ const Main = props => (
         <div className={Styles.fish}>
           {/* <img src={Star} alt="Cute blowfish cartoon"></img> */}
           <Star />
+
           {/* <div className={Styles.bubbles}>
             <div className={Styles.bubble}></div>
           </div> */}

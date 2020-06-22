@@ -1,6 +1,5 @@
 body {
   min-height: 100vh;
-  position: relative;
 }
 
 html,
@@ -26,10 +25,13 @@ html {
   scroll-behavior: smooth;
   transition: background ease-in-out 1.3s;
 }
+body {
+  box-sizing: border-box;
+}
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 div[role="group"][tabindex] {
