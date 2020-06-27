@@ -16,7 +16,7 @@ const Showcase = ({ data }) => (
       </h2>
       <p>
         Some of our past work we can share, hopefully we can feature yours one
-        day! Woo
+        day.
       </p>
     </div>
     <div className={Styles.caseflex}>
