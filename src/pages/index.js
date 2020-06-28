@@ -1,6 +1,6 @@
 import React from "react"
 import Styles from "./main.module.scss"
-
+import Pricing from "../components/pricing"
 import Navbar from "../components/navbar"
 import Star from "../assets/newink4.svg"
 import Form from "../components/form"
@@ -65,7 +65,9 @@ const Main = props => (
       </div>
     </section>
     <Services />
+
     <Why />
+    <Pricing />
     <Aboutus />
 
     <section id="contact" className={Styles.contact}>

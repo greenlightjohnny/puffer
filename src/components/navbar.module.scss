@@ -31,7 +31,8 @@
   }
 
   a {
-    color: var(--lighttext);
+    //color: var(--lighttext);
+    color: #1f6bff;
     text-shadow: none;
     text-decoration: none;
     background-image: none;
@@ -39,7 +40,8 @@
     outline: none;
 
     &:hover {
-      color: #1f6bff;
+      color: red;
+      transition: all ease-in-out 0.3s;
     }
   }
 

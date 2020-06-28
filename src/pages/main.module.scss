@@ -57,6 +57,15 @@
   //background-attachment: fixed;
   //background-color: black;
   background-color: var(--light1);
+  @media screen and (max-width: 508px) {
+    background: linear-gradient(
+      to top,
+      #000000,
+      var(--light1),
+      90%,
+      var(--light1)
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
 
   .landingflex {
     display: flex;
@@ -78,6 +87,7 @@
       display: flex;
       justify-self: flex-end;
       padding-right: 2rem;
+      padding-bottom: 2rem;
       //min-height: 200px;
 
       svg {
@@ -141,6 +151,7 @@
       //margin-top: 10rem;
       transition: all 0.37s ease 0s;
       animation: testt 1s ease 0s 1 normal none running;
+      max-height: 50%;
       @media screen and (max-width: 700px) {
         //max-width: 350px;
         //justify-content: center;
@@ -161,6 +172,10 @@
         //color: hsla(0, 0%, 100%, 0.5);
         color: var(--textcolor2);
         font-size: 1.3rem;
+        @media screen and (max-width: 428px) {
+          font-size: 1rem;
+          //left: -250px;
+        }
       }
       h1 {
         //color: #1f6bff;
