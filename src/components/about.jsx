@@ -1,5 +1,5 @@
 import React from "react"
-
+import Button from "./button"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import Styles from "./about.module.scss"
@@ -26,30 +26,28 @@ const About = ({ data }) => (
           data-sal-easing="ease-in"
           data-sal-duration="1000"
         >
-          Star City Creative, a fully remote company with people sprinkled
-          throughout the US. The majority have ended up in the Roanoke and
-          Blacksburg, VA region. We work with clients around the world to create
-          unique websites.{" "}
+          Star City Creative, a new small business serving the NRV Region. I'm
+          Fred, the founder, and I am lucky to have a few close friends and a
+          sister as my partners. I founded this company with the belief that we
+          could provide modern, super fast, websites at a lower cost than the
+          bigger agencies AND provide better customer support at the same time.
         </p>
-        <p
-          data-sal="fade"
-          data-sal-delay="400"
-          data-sal-easing="ease-in"
-          data-sal-duration="1000"
-        >
-          Typically we only take on one
-          <span className={Styles.out}> new client</span> at a time, allowing us
-          to focus all our creative energy and coding into a single project.
-          Depending on the project scope and size we will bring in{" "}
-          <span className={Styles.out}> outside help </span>
-          as needed.
+        <p>
+          Instead of charging a large up front fee (typically 3k-40k) along with
+          a contract and monthly fee, we only charge a monthly fee with no
+          contract. For a small business, a large upfront cost can be a huge
+          burden (we know, we are a small business!). We also don't have
+          contracts. Maybe you take a new job out of State and leave your
+          business, you won't be stuck paying for a year of service you don't
+          use. Read more about our company and philosophy: <br></br>
+          <Button url="meet">Company</Button>
         </p>
 
         <p
-          data-sal="fade"
-          data-sal-delay="400"
-          data-sal-easing="ease-in"
-          data-sal-duration="1000"
+        // data-sal="fade"
+        // data-sal-delay="400"
+        // data-sal-easing="ease-in"
+        // data-sal-duration="1000"
         >
           Our goal to create unique, fast, and user-friendly websites. For this
           we use <span className={Styles.out}>Gatsby</span>, instead of the more
@@ -60,46 +58,10 @@ const About = ({ data }) => (
           usually end up <span className={Styles.out}> ranking higher</span> in
           Google search results. This translates to more traffic to your
           website, and a higher retention rate due to the blazing fast load
-          times and easy to navigate designs.
+          times and easy to navigate designs. Read more about the advantages of
+          our technology: <br></br>{" "}
+          <Button contact="#technology">Technology</Button>
         </p>
-      </div>
-
-      <div
-        data-sal="zoom-in"
-        data-sal-delay="400"
-        data-sal-easing="ease-in"
-        data-sal-duration="1000"
-        className={Styles.right}
-      >
-        <h2>Why Pick Us?</h2>
-
-        <div className={Styles.slideagain}>
-          <ul>
-            <li>
-              <span className={Styles.big}>Quality</span> Work. Our sites look
-              good AND perform amazing.
-            </li>
-            <li>
-              <span className={Styles.big}>Lower</span> Costs. How? We got rid
-              of our office and have 0 management overhead.
-            </li>
-            <li>
-              <span className={Styles.big}>Personal</span> Relationships. We're
-              not some massive company.
-            </li>
-            <li>
-              <span className={Styles.big}>Modern</span> Technology.
-            </li>
-            <li>
-              <span className={Styles.big}>Happy</span> People. Everyone is
-              passionate about our work, it's more than a job.
-            </li>
-            <li>
-              <span className={Styles.big}>Gatsby.</span> We create static sites
-              with Gatsby.
-            </li>
-          </ul>
-        </div>
       </div>
     </div>
   </section>

@@ -64,7 +64,7 @@ const pricing = () => {
               Fully Mobile Device Ready
             </li>
           </ul>
-          <Button url="#contact">Pricing</Button>
+          <Button url="#contact">Contact</Button>
         </div>
         <div className={Styles.flexItem}>
           <h2>STANDARD</h2>
@@ -149,10 +149,18 @@ const pricing = () => {
                 src="https://d33wubrfki0l68.cloudfront.net/608a680adbcdbdfc5b0db51ce6104719aaf2b24b/7080e/images/tick.svg"
                 alt=""
               />{" "}
+              Custom Animations
+            </li>
+            <li>
+              <img
+                aria-hidden="true"
+                src="https://d33wubrfki0l68.cloudfront.net/608a680adbcdbdfc5b0db51ce6104719aaf2b24b/7080e/images/tick.svg"
+                alt=""
+              />{" "}
               Choice of CMS
             </li>
           </ul>
-          <Button url="#contact">Pricing</Button>
+          <Button url="#contact">Contact</Button>
         </div>
       </div>
     </section>

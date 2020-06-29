@@ -29,12 +29,11 @@ const Main = props => (
           </h1>
           <p>
             <span className={Styles.high}>Custom </span>website development.{" "}
+            Serving Roanoke, Blacksburg and the NRV.
             <br></br> Blazing <span className={Styles.high}>fast</span> load
             times.
             <br></br>
             <span className={Styles.high}>Innovative </span>designs. <br></br>
-            Gatsby <span className={Styles.high}>Kool-Aid </span> <br></br>
-            Kittens<span className={Styles.high}>*</span> <br></br>
             <Link className={Styles.button1} to="#contact">
               Contact{" "}
               <svg
@@ -66,7 +65,6 @@ const Main = props => (
     </section>
     <Services />
 
-    <Why />
     <Pricing />
     <Aboutus />
 

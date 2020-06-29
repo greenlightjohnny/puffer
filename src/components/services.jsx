@@ -80,6 +80,20 @@ const Services = ({ data }) => (
         </div>
       </a>
     </div>
+    <div className={Styles.pricing}>
+      <h2>
+        {" "}
+        <span className={Styles.blue}>$0</span> Down,{" "}
+        <span className={Styles.blue}>$150 </span> Per Month, <br></br> No
+        Minimum Contract
+      </h2>
+      <p>
+        $0 for a standard 5 page small business website. No money down and $150
+        per month, which includes hosting and our awesome local (Roanoke,
+        Blacksburg) customer service. No contracts because we hate those as
+        well, cancel or pause your service at anytime with no penalty.
+      </p>
+    </div>
     <div
       data-sal="zoom-in"
       data-sal-delay="300"
