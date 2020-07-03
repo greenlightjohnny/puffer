@@ -4,7 +4,7 @@ import Button from "./button"
 
 const pricing = () => {
   return (
-    <section className={Styles.main}>
+    <section id="pricing" className={Styles.main}>
       <div
         data-sal="slide-left"
         data-sal-delay="300"

@@ -58,15 +58,15 @@
   //background-attachment: fixed;
   //background-color: black;
   background-color: var(--light1);
-  @media screen and (max-width: 508px) {
-    background: linear-gradient(
-      to top,
-      #000000,
-      var(--light1),
-      90%,
-      var(--light1)
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  }
+  // @media screen and (max-width: 508px) {
+  //   background: linear-gradient(
+  //     to top,
+  //     #000000,
+  //     var(--light1),
+  //     90%,
+  //     var(--light1)
+  //   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  // }
 
   &:before {
     content: "";
@@ -185,7 +185,7 @@
 
       p {
         //color: hsla(0, 0%, 100%, 0.5);
-        color: var(--textcolor2);
+        //color: var(--textcolor2);
         font-size: 1.3rem;
         @media screen and (max-width: 428px) {
           font-size: 1rem;

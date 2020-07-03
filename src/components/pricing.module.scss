@@ -20,13 +20,15 @@
   .maintitle {
     max-width: 1200px;
     margin: 0 auto;
-    padding-top: 3rem;
+    text-align: center;
+    //padding-top: 3rem;
     padding-left: 2rem;
     h2 {
       font-size: 3rem;
       color: var(--headertext);
       transition: color ease-in-out 1.3s;
       margin-bottom: 3rem;
+      margin-top: 0;
     }
   }
 

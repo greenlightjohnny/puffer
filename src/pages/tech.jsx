@@ -1,5 +1,5 @@
 import React from "react"
-import Style from "./why.module.scss"
+import Style from "../components/why.module.scss"
 import { StaticQuery, graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
@@ -93,7 +93,7 @@ const Why = ({ data }) => (
         <p>
           <span className={Style.big}>Gatsby</span> built sites load faster than
           WordPress. As if that was not enough, they are more secure, rank
-          higher, and have better SEO out of the box..
+          higher, and have better SEO out of the box.
         </p>
         {/* <p className={Style.p2}>
           <span className={Style.big}>JAMstack.</span> We follow the JAMstack

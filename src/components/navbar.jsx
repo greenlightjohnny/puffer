@@ -52,7 +52,7 @@ function Navbar() {
             <Link to="#services">Services</Link>
           </li>
           <li onClick={() => setNavnames(!navnames)}>
-            <Link to="#why">Technology</Link>
+            <Link to="#pricing">Pricing</Link>
           </li>
           <li onClick={() => setNavnames(!navnames)}>
             <Link to="/#about">About</Link>

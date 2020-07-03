@@ -1,6 +1,9 @@
 body {
   min-height: 100vh;
 }
+div.tl-edges {
+  overflow-x: visible;
+}
 
 html,
 body,

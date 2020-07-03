@@ -29,6 +29,7 @@ const Main = props => (
           </h1>
           <p>
             <span className={Styles.high}>Custom </span>website development.{" "}
+            <br></br>
             Serving Roanoke, Blacksburg and the NRV.
             <br></br> Blazing <span className={Styles.high}>fast</span> load
             times.
@@ -168,7 +169,7 @@ const Main = props => (
           </svg>{" "}
           and Gatsby
         </p>
-        <p>© 2020 Puffer Fish Labs</p>
+        <p>© 2020 Star City Creative</p>
       </div>
     </footer>
   </div>
